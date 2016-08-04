@@ -32,7 +32,7 @@ package io.voodoo.game {
 	import io.voodoo.game.drums.targets.TargetDrumEnemy;
 	import io.voodoo.game.drums.targets.TargetDrumItem;
 	import io.voodoo.game.drums.targets.TargetDrumItself;
-	import io.voodoo.game.sounds.Beat;
+	import io.voodoo.game.sounds.Beat2;
 	
 	
 	/**
@@ -43,7 +43,7 @@ package io.voodoo.game {
 		
 		// CONSTANTS :
 		// The time between each beat, in ms.
-		private static const BEAT_PERIOD:int = 476;
+		private static const BEAT_PERIOD:int = 666;
 		private static const BEAT_DISPLAYER_MARGIN:int = 10;
 		private static const BEAT_DISPLAYER_THICKNESS:int = 5;
 		private static const DRUMS_APPEAR_ANIMATION_DURATION:Number = 0.1;
@@ -79,6 +79,10 @@ package io.voodoo.game {
 		}
 		private var drums:Vector.<Drum>;
 		
+		private var actionDrumsTabActivated:Boolean;
+		private var targetDrumsTabActivated:Boolean;
+		private var detailDrumsTabActivated:Boolean;
+		
 		// Debug
 		private var keysDown:Vector.<uint>;
 		private var actionTabUpState:DisplayObject;
@@ -97,9 +101,19 @@ package io.voodoo.game {
 		
 		// LIFECYCLE :
 		override protected function onPrepare():void {
+			cm.addListener(actionDrumTab, MouseEvent.ROLL_OVER, onActionDrumTabTouched);
 			cm.addListener(actionDrumTab, MouseEvent.MOUSE_DOWN, onActionDrumTabTouched);
+			cm.addListener(targetDrumTab, MouseEvent.ROLL_OVER, onTargetDrumTabTouched);
 			cm.addListener(targetDrumTab, MouseEvent.MOUSE_DOWN, onTargetDrumTabTouched);
+			cm.addListener(detailDrumTab, MouseEvent.ROLL_OVER, onDetailDrumTabTouched);
 			cm.addListener(detailDrumTab, MouseEvent.MOUSE_DOWN, onDetailDrumTabTouched);
+			
+			cm.addListener(actionDrumTab, MouseEvent.MOUSE_UP, onActionDrumTabReleased);
+			cm.addListener(actionDrumTab, MouseEvent.RELEASE_OUTSIDE, onActionDrumTabReleased);
+			cm.addListener(targetDrumTab, MouseEvent.MOUSE_UP, onTargetDrumTabReleased);
+			cm.addListener(targetDrumTab, MouseEvent.RELEASE_OUTSIDE, onTargetDrumTabReleased);
+			cm.addListener(detailDrumTab, MouseEvent.MOUSE_UP, onDetailDrumTabReleased);
+			cm.addListener(detailDrumTab, MouseEvent.RELEASE_OUTSIDE, onDetailDrumTabReleased);
 			
 			generateDrums();
 			
@@ -165,10 +179,10 @@ package io.voodoo.game {
 			if(beatDisplayerTween != null)
 				beatDisplayerTween.kill();
 			beatDisplayer.alpha = 1;
-			beatDisplayerTween = TweenMax.to(this.beatDisplayer, (BEAT_PERIOD/1000)/2.0, {alpha:0, repeat:-1, yoyo:true});
+			beatDisplayerTween = TweenMax.to(this.beatDisplayer, (BEAT_PERIOD/1000.0)/2.0, {delay:0.09 , alpha:0, repeat:-1, yoyo:true});	// -> the delay is the end of the first beat on the sound track.
 			
 			this.drumHandler.startTime = getTimer();
-			new Sequence(this).playSound(new Beat())
+			new Sequence(this).playSound(new Beat2())
 				.call(startBeat)
 				.start();
 		}
@@ -221,15 +235,47 @@ package io.voodoo.game {
 		
 		// CALLBAKCS :
 		private function onActionDrumTabTouched(event:MouseEvent):void {
+			if(!event.buttonDown)
+				return;
 			currentDrumTab = Drum.ACTION;
+			actionDrumsTabActivated = true;
+			targetDrumsTabActivated = detailDrumsTabActivated = false;
 		}
 		
 		private function onTargetDrumTabTouched(event:MouseEvent):void {
+			if(!event.buttonDown)
+				return;
 			currentDrumTab = Drum.TARGET;
+			targetDrumsTabActivated = true;
+			actionDrumsTabActivated = detailDrumsTabActivated = false;
 		}
 		
 		private function onDetailDrumTabTouched(event:MouseEvent):void {
+			if(!event.buttonDown)
+				return;
 			currentDrumTab = Drum.DETAIL;
+			detailDrumsTabActivated = true;
+			actionDrumsTabActivated = targetDrumsTabActivated = false;
+		}
+		
+		private function onActionDrumTabReleased(event:MouseEvent):void {
+			actionDrumsTabActivated = false;
+			checkTabsActivation();
+		}
+		
+		private function onTargetDrumTabReleased(event:MouseEvent):void {
+			targetDrumsTabActivated = false;
+			checkTabsActivation();
+		}
+		
+		private function onDetailDrumTabReleased(event:MouseEvent):void {
+			detailDrumsTabActivated = false;
+			checkTabsActivation();
+		}
+		
+		private function checkTabsActivation():void {
+			if(!actionDrumsTabActivated && !targetDrumsTabActivated && !detailDrumsTabActivated)
+				currentDrumTab = null;
 		}
 		
 		

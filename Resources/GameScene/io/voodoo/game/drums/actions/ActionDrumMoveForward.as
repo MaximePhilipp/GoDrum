@@ -1,4 +1,5 @@
 package io.voodoo.game.drums.actions {
+	import flash.events.MouseEvent;
 	import flash.media.Sound;
 	
 	import io.voodoo.game.DrumHandler;

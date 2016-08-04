@@ -8,7 +8,7 @@
           <DOMFolderItem name="_Sounds" itemID="57a2098d-0000020b" isExpanded="true"/>
      </folders>
      <media>
-          <DOMSoundItem name="_Sounds/funk-beat.wav" itemID="57a20c47-0000028c" linkageExportForAS="true" linkageClassName="io.voodoo.game.sounds.Beat" sourceExternalFilepath="../LIBRARY/_Sounds/funk-beat.wav" sourceLastImported="1470237279" href="_Sounds/funk-beat.wav" soundDataHRef="M 1 1470237111.dat" format="44kHz 16bit Stereo" sampleCount="336000" exportFormat="5" exportBits="13" dataLength="1344000"/>
+          <DOMSoundItem name="_Sounds/Beat_sound" itemID="57a36b8f-00001913" linkageExportForAS="true" linkageClassName="io.voodoo.game.sounds.Beat2" sourceExternalFilepath="./LIBRARY/_Sounds/Beat_sound.wav" sourceLastImported="1470327683" externalFileSize="354124" href="_Sounds/Beat_sound.wav" soundDataHRef="M 2 1470327622.dat" format="44kHz 16bit Stereo" sampleCount="88461" exportFormat="5" exportBits="13" dataLength="353844"/>
      </media>
      <symbols>
           <Include href="_DrumBoxes/ActionsDrumsBox.xml" itemID="57a34ee2-00001111" lastModified="1470324368"/>
@@ -32,7 +32,7 @@
           <Include href="_DrumTabs/ActionDrumTab.xml" itemIcon="0" itemID="57a1fd26-00000122" lastModified="1470234635"/>
           <Include href="_DrumTabs/DetailDrumTab.xml" itemIcon="0" itemID="57a20061-00000140" lastModified="1470234938"/>
           <Include href="_DrumTabs/TargetDrumTab.xml" itemIcon="0" itemID="57a1ff20-00000134" lastModified="1470234649"/>
-          <Include href="GoDrumGameScene.xml" itemID="57a2012b-00000146" lastModified="1470324495"/>
+          <Include href="GoDrumGameScene.xml" itemID="57a2012b-00000146" lastModified="1470327621"/>
      </symbols>
      <timelines>
           <DOMTimeline name="Scene 1">
@@ -83,25 +83,25 @@
      </persistentData>
      <PrinterSettings/>
      <publishHistory>
-          <PublishItem publishSize="649023" publishTime="1470324772" publishDebug="true"/>
-          <PublishItem publishSize="649010" publishTime="1470324733"/>
-          <PublishItem publishSize="649016" publishTime="1470324731" publishDebug="true"/>
-          <PublishItem publishSize="649053" publishTime="1470324716"/>
-          <PublishItem publishSize="649044" publishTime="1470324714" publishDebug="true"/>
-          <PublishItem publishSize="649047" publishTime="1470324667"/>
-          <PublishItem publishSize="649037" publishTime="1470324664" publishDebug="true"/>
-          <PublishItem publishSize="649063" publishTime="1470324641" publishDebug="true"/>
-          <PublishItem publishSize="649104" publishTime="1470324638" publishDebug="true"/>
-          <PublishItem publishSize="649105" publishTime="1470324627" publishDebug="true"/>
-          <PublishItem publishSize="649112" publishTime="1470324576"/>
-          <PublishItem publishSize="649118" publishTime="1470324575" publishDebug="true"/>
-          <PublishItem publishSize="649109" publishTime="1470324557" publishDebug="true"/>
-          <PublishItem publishSize="649078" publishTime="1470324519"/>
-          <PublishItem publishSize="649071" publishTime="1470324517" publishDebug="true"/>
-          <PublishItem publishSize="62422" publishTime="1470324514" publishDebug="true"/>
-          <PublishItem publishSize="649106" publishTime="1470324491"/>
-          <PublishItem publishSize="649116" publishTime="1470324489" publishDebug="true"/>
-          <PublishItem publishSize="649118" publishTime="1470324412"/>
-          <PublishItem publishSize="649076" publishTime="1470324342"/>
+          <PublishItem publishSize="606160" publishTime="1470348834" publishDebug="true"/>
+          <PublishItem publishSize="606126" publishTime="1470348797"/>
+          <PublishItem publishSize="606132" publishTime="1470348795" publishDebug="true"/>
+          <PublishItem publishSize="606156" publishTime="1470348741"/>
+          <PublishItem publishSize="606151" publishTime="1470348694"/>
+          <PublishItem publishSize="606156" publishTime="1470348692" publishDebug="true"/>
+          <PublishItem publishSize="606147" publishTime="1470348684" publishDebug="true"/>
+          <PublishItem publishSize="606146" publishTime="1470348675" publishDebug="true"/>
+          <PublishItem publishSize="606128" publishTime="1470348617"/>
+          <PublishItem publishSize="606127" publishTime="1470348612" publishDebug="true"/>
+          <PublishItem publishSize="18002" publishTime="1470348572" publishDebug="true"/>
+          <PublishItem publishSize="18002" publishTime="1470348499" publishDebug="true"/>
+          <PublishItem publishSize="18002" publishTime="1470348450" publishDebug="true"/>
+          <PublishItem publishSize="605887" publishTime="1470348385" publishDebug="true"/>
+          <PublishItem publishSize="605814" publishTime="1470348189"/>
+          <PublishItem publishSize="605814" publishTime="1470348176" publishDebug="true"/>
+          <PublishItem publishSize="605807" publishTime="1470348068"/>
+          <PublishItem publishSize="605806" publishTime="1470348060" publishDebug="true"/>
+          <PublishItem publishSize="605800" publishTime="1470348049" publishDebug="true"/>
+          <PublishItem publishSize="605772" publishTime="1470348025" publishDebug="true"/>
      </publishHistory>
 </DOMDocument>

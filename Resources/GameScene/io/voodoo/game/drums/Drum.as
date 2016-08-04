@@ -60,16 +60,16 @@
 			Log.info(TAG, "Drum " + type + " " + subType + " initialized.");
 		}
 		
-		private function onDrumTapped(event:MouseEvent):void {
+		protected function onDrumTapped(event:MouseEvent):void {
 			Log.info(TAG, "Drum " + type + " tapped with subtype " + subType + " ...");
 			//this.soundCM.playSound(sound);
-			gotoAndStop(1);
+			gotoAndStop("down");
 			
 			drumHandler.registerDrum(subType, getTimer());
 		}
 		
-		private function onDrumReleased(event:MouseEvent):void {
-			gotoAndStop(0);
+		protected function onDrumReleased(event:MouseEvent):void {
+			gotoAndStop("up");
 		}
 		
 		
