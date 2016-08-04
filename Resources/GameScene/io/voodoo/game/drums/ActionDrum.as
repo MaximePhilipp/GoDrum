@@ -1,6 +1,8 @@
 package io.voodoo.game.drums {
 	import flash.media.Sound;
 	
+	import io.voodoo.game.DrumHandler;
+	
 	
 	/**
 	 *
@@ -16,8 +18,9 @@ package io.voodoo.game.drums {
 		public static const DEFEND:String = "ActionDrum.Defend";
 		
 		// CONSTRUCTOR :
-		public function ActionDrum(subtype:String, sound:Sound) {
-			super(Drum.ACTION, subtype, sound);
+		public function ActionDrum() {
+			super();
+			this._type = Drum.ACTION;
 		}
 	}
 }

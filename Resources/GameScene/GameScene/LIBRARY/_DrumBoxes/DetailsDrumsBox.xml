@@ -1,0 +1,51 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_DrumBoxes/DetailsDrumsBox" itemID="57a352c5-00001169" linkageExportForAS="true" linkageBaseClass="flash.display.Sprite" linkageClassName="io.voodoo.game.display.drumboxes.DetailsDrumsBox" lastModified="1470324013" isSpriteSubclass="true">
+  <timeline>
+    <DOMTimeline name="DetailsDrumsBox">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4F80FF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_DrumTabs/_Graphics/PurpleTab">
+                  <matrix>
+                    <Matrix a="1.25" d="3" tx="50"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0.6015625"/>
+                  </color>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_Drums/DetailDrumBig" name="bigDrum">
+                  <matrix>
+                    <Matrix a="0.617279052734375" d="0.617279052734375" tx="50" ty="-141.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_Drums/DetailDrumFast" name="fastDrum" selected="true">
+                  <matrix>
+                    <Matrix a="0.617279052734375" d="0.617279052734375" tx="50" ty="141.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_Drums/DetailDrumSmall" name="smallDrum">
+                  <matrix>
+                    <Matrix a="0.617279052734375" d="0.617279052734375" tx="50"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

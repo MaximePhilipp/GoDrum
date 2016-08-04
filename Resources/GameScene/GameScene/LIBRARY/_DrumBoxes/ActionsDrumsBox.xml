@@ -1,0 +1,67 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_DrumBoxes/ActionsDrumsBox" itemID="57a34ee2-00001111" linkageExportForAS="true" linkageBaseClass="flash.display.Sprite" linkageClassName="io.voodoo.game.display.drumboxes.ActionsDrumsBox" lastModified="1470324368" isSpriteSubclass="true">
+  <timeline>
+    <DOMTimeline name="ActionsDrumsBox">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4F80FF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_DrumTabs/_Graphics/BlueTab">
+                  <matrix>
+                    <Matrix a="1.25" d="3" tx="50"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point y="-0.05"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0.6015625"/>
+                  </color>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_Drums/ActionDrumMoveForward" name="moveForwardDrum">
+                  <matrix>
+                    <Matrix a="0.617279052734375" d="0.617279052734375" tx="50" ty="-282.65"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_Drums/ActionDrumMoveBackwards" name="moveBackwardsDrum">
+                  <matrix>
+                    <Matrix a="0.617279052734375" d="0.617279052734375" tx="50" ty="-141.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_Drums/ActionDrumLiftLay" name="liftLayDrum">
+                  <matrix>
+                    <Matrix a="0.617279052734375" d="0.617279052734375" tx="50"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_Drums/ActionDrumAttack" name="attackDrum">
+                  <matrix>
+                    <Matrix a="0.617279052734375" d="0.617279052734375" tx="50" ty="141.3"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_Drums/ActionDrumDefend" name="defendDrum">
+                  <matrix>
+                    <Matrix a="0.617279052734375" d="0.617279052734375" tx="50" ty="282.65"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

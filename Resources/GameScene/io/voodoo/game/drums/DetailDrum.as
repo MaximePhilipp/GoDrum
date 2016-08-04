@@ -1,6 +1,8 @@
 package io.voodoo.game.drums {
 	import flash.media.Sound;
 	
+	import io.voodoo.game.DrumHandler;
+	
 	
 	/**
 	 *
@@ -13,8 +15,9 @@ package io.voodoo.game.drums {
 		public static const FAST:String = "DetailDrum.Fast";
  		
 		// CONSTRUCTOR :
-		public function DetailDrum(subtype:String, sound:Sound) {
-			super(Drum.DETAIL, subtype, sound);
+		public function DetailDrum() {
+			super();
+			this._type = Drum.DETAIL;
 		}
 	}
 }

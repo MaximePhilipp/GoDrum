@@ -16,7 +16,22 @@ package io.voodoo.game {
 	import flash.ui.Keyboard;
 	import flash.utils.getTimer;
 	
+	import io.voodoo.game.display.drumboxes.ActionsDrumsBox;
+	import io.voodoo.game.display.drumboxes.DetailsDrumsBox;
+	import io.voodoo.game.display.drumboxes.TargetsDrumsBox;
+	import io.voodoo.game.drums.DetailDrum;
 	import io.voodoo.game.drums.Drum;
+	import io.voodoo.game.drums.actions.ActionDrumAttack;
+	import io.voodoo.game.drums.actions.ActionDrumDefend;
+	import io.voodoo.game.drums.actions.ActionDrumLiftLay;
+	import io.voodoo.game.drums.actions.ActionDrumMoveBackwards;
+	import io.voodoo.game.drums.actions.ActionDrumMoveForward;
+	import io.voodoo.game.drums.details.DetailDrumBig;
+	import io.voodoo.game.drums.details.DetailDrumFast;
+	import io.voodoo.game.drums.details.DetailDrumSmall;
+	import io.voodoo.game.drums.targets.TargetDrumEnemy;
+	import io.voodoo.game.drums.targets.TargetDrumItem;
+	import io.voodoo.game.drums.targets.TargetDrumItself;
 	import io.voodoo.game.sounds.Beat;
 	
 	
@@ -31,16 +46,22 @@ package io.voodoo.game {
 		private static const BEAT_PERIOD:int = 476;
 		private static const BEAT_DISPLAYER_MARGIN:int = 10;
 		private static const BEAT_DISPLAYER_THICKNESS:int = 5;
+		private static const DRUMS_APPEAR_ANIMATION_DURATION:Number = 0.1;
 		
 		// FLASH ELEMENTS :
 		public var actionDrumTab:SimpleButton;
 		public var targetDrumTab:SimpleButton;
 		public var detailDrumTab:SimpleButton;
+		public var actionsDrumBox:ActionsDrumsBox;
+		public var targetsDrumBox:TargetsDrumsBox;
+		public var detailsDrumBox:DetailsDrumsBox;
+		
 		
 		// PROPERTIES :
 		private var drumHandler:DrumHandler;
 		private var beatDisplayer:Sprite;
 		private var beatDisplayerTween:TweenMax;
+		private var screen:Rectangle;
 		private var _currentDrumTab:String;
 		public function get currentDrumTab():String {
 			return this._currentDrumTab;
@@ -49,11 +70,14 @@ package io.voodoo.game {
 			if(value == _currentDrumTab)
 				return;
 			
+			actionsDrumBox.x = targetsDrumBox.x = detailsDrumBox.x = screen.width;
+			
 			_currentDrumTab = value;
 			Log.info(TAG, "Current drum tab changed, now " + value);
 			
 			updateAvailableDrums();
 		}
+		private var drums:Vector.<Drum>;
 		
 		// Debug
 		private var keysDown:Vector.<uint>;
@@ -77,12 +101,14 @@ package io.voodoo.game {
 			cm.addListener(targetDrumTab, MouseEvent.MOUSE_DOWN, onTargetDrumTabTouched);
 			cm.addListener(detailDrumTab, MouseEvent.MOUSE_DOWN, onDetailDrumTabTouched);
 			
+			generateDrums();
+			
 			super.onPrepare();
 		}
 		
 		override protected function onShow(parent:DisplayObjectContainer, index:int):void {
 			
-			var screen:Rectangle = Display.getVisibleBounds(this);
+			screen = Display.getVisibleBounds(parent);
 			this.actionDrumTab.x = screen.x - 20;
 			this.targetDrumTab.x = screen.x - 20;
 			this.detailDrumTab.x = screen.x - 20;
@@ -98,6 +124,10 @@ package io.voodoo.game {
 		override protected function onStart():void {
 			
 			this.drumHandler = new DrumHandler(BEAT_PERIOD);
+			var i:int, n:int = drums.length;
+			for(i = 0 ; i < n ; i++) 
+				drums[i].init(this.drumHandler);
+			
 			startBeat();
 			
 			// Debug
@@ -106,6 +136,28 @@ package io.voodoo.game {
 			super.onStart();
 		}
 		
+		
+		
+		// DRUMS :
+		private function generateDrums():void {
+			Log.info(TAG, "Generating drums ...");
+			this.drums = new Vector.<Drum>();
+			this.drums.push(actionsDrumBox.moveForwardDrum);
+			this.drums.push(actionsDrumBox.moveBackwardsDrum);
+			this.drums.push(actionsDrumBox.liftLayDrum);
+			this.drums.push(actionsDrumBox.attackDrum);
+			this.drums.push(actionsDrumBox.defendDrum);
+			
+			this.drums.push(targetsDrumBox.itselfDrum);
+			this.drums.push(targetsDrumBox.itemDrum);
+			this.drums.push(targetsDrumBox.enemyDrum);
+			
+			this.drums.push(detailsDrumBox.bigDrum);
+			this.drums.push(detailsDrumBox.smallDrum);
+			this.drums.push(detailsDrumBox.fastDrum);
+			
+			Log.info(TAG, "Drums generation complete.");
+		}
 		
 		
 		// BEAT :
@@ -137,22 +189,22 @@ package io.voodoo.game {
 			if(_currentDrumTab == Drum.ACTION) {
 				this.setChildIndex(actionDrumTab, this.numChildren - 1);
 				this.actionDrumTab.alpha = 1;
+				TweenLite.fromTo(actionsDrumBox, DRUMS_APPEAR_ANIMATION_DURATION, {x:screen.x + screen.width}, {x:screen.x + screen.width - actionsDrumBox.width});
 			}
 			else if(_currentDrumTab == Drum.TARGET) {
 				this.setChildIndex(targetDrumTab, this.numChildren - 1);
 				this.targetDrumTab.alpha = 1;
+				TweenLite.fromTo(targetsDrumBox, DRUMS_APPEAR_ANIMATION_DURATION, {x:screen.x + screen.width}, {x:screen.x + screen.width - targetsDrumBox.width});
 			}
 			else if(_currentDrumTab == Drum.DETAIL) {
 				this.setChildIndex(detailDrumTab, this.numChildren - 1);
 				this.detailDrumTab.alpha = 1;
+				TweenLite.fromTo(detailsDrumBox, DRUMS_APPEAR_ANIMATION_DURATION, {x:screen.x + screen.width}, {x:screen.x + screen.width - detailsDrumBox.width});
 			}
-			
-			// TODO
 		}
 		
 		private function generateBeatDisplayer():void {
 			this.beatDisplayer = new Sprite();
-			var screen = Display.getVisibleBounds(this);
 			
 			beatDisplayer.graphics.beginFill(0xffffff, 1);
 			beatDisplayer.graphics.drawRect(screen.x + BEAT_DISPLAYER_MARGIN, screen.y + BEAT_DISPLAYER_MARGIN, screen.width - (2*BEAT_DISPLAYER_MARGIN), BEAT_DISPLAYER_THICKNESS);

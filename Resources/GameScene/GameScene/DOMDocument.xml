@@ -1,5 +1,8 @@
-<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" backgroundColor="#999999" width="1024" height="768" frameRate="60" currentTimeline="1" xflVersion="2.4" creatorInfo="Adobe Flash Professional CC" platform="Windows" versionInfo="Saved by Adobe Flash Windows 13.1 build 226" majorVersion="13" minorVersion="1" buildNumber="226" vanishingPoint3DX="512" vanishingPoint3DY="384" nextSceneIdentifier="2" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false" filetypeGUID="DD0DDBBF-5BEF-45B2-9F24-A3048D2A676F">
+<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" backgroundColor="#999999" width="1200" height="768" frameRate="60" currentTimeline="1" xflVersion="2.4" creatorInfo="Adobe Flash Professional CC" platform="Windows" versionInfo="Saved by Adobe Flash Windows 13.1 build 226" majorVersion="13" minorVersion="1" buildNumber="226" viewAngle3D="62.7696818626324" vanishingPoint3DX="512" vanishingPoint3DY="384" nextSceneIdentifier="2" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false" filetypeGUID="DD0DDBBF-5BEF-45B2-9F24-A3048D2A676F">
      <folders>
+          <DOMFolderItem name="_DrumBoxes" itemID="57a35d55-00001478" isExpanded="true"/>
+          <DOMFolderItem name="_Drums" itemID="57a309d0-00000568" isExpanded="true"/>
+          <DOMFolderItem name="_Drums/_Graphics" itemID="57a309d8-0000056c" isExpanded="true"/>
           <DOMFolderItem name="_DrumTabs" itemID="57a1fe23-00000129" isExpanded="true"/>
           <DOMFolderItem name="_DrumTabs/_Graphics" itemID="57a201d0-00000162" isExpanded="true"/>
           <DOMFolderItem name="_Sounds" itemID="57a2098d-0000020b" isExpanded="true"/>
@@ -8,13 +11,28 @@
           <DOMSoundItem name="_Sounds/funk-beat.wav" itemID="57a20c47-0000028c" linkageExportForAS="true" linkageClassName="io.voodoo.game.sounds.Beat" sourceExternalFilepath="../LIBRARY/_Sounds/funk-beat.wav" sourceLastImported="1470237279" href="_Sounds/funk-beat.wav" soundDataHRef="M 1 1470237111.dat" format="44kHz 16bit Stereo" sampleCount="336000" exportFormat="5" exportBits="13" dataLength="1344000"/>
      </media>
      <symbols>
-          <Include href="_DrumTabs/_Graphics/BlueTab.xml" loadImmediate="false" itemID="57a1fe5c-0000012b" lastModified="1470238845"/>
-          <Include href="_DrumTabs/_Graphics/GreenTab.xml" loadImmediate="false" itemID="57a1ff90-00000136" lastModified="1470238856"/>
-          <Include href="_DrumTabs/_Graphics/PurpleTab.xml" loadImmediate="false" itemID="57a200b7-00000142" lastModified="1470238864"/>
+          <Include href="_DrumBoxes/ActionsDrumsBox.xml" itemID="57a34ee2-00001111" lastModified="1470324368"/>
+          <Include href="_DrumBoxes/DetailsDrumsBox.xml" itemID="57a352c5-00001169" lastModified="1470324013"/>
+          <Include href="_DrumBoxes/TargetsDrumsBox.xml" itemID="57a35210-00001143" lastModified="1470324035"/>
+          <Include href="_Drums/_Graphics/DrumSprite.xml" loadImmediate="false" itemID="57a30a0a-0000056e" lastModified="1470303035"/>
+          <Include href="_Drums/ActionDrumAttack.xml" itemID="57a313e6-000005fe" lastModified="1470322793"/>
+          <Include href="_Drums/ActionDrumDefend.xml" itemID="57a30fbc-000005a6" lastModified="1470322798"/>
+          <Include href="_Drums/ActionDrumLiftLay.xml" itemID="57a30eb2-0000058e" lastModified="1470322802"/>
+          <Include href="_Drums/ActionDrumMoveBackwards.xml" itemID="57a313d6-000005fd" lastModified="1470322809"/>
+          <Include href="_Drums/ActionDrumMoveForward.xml" itemID="57a30bd1-00000571" lastModified="1470322813"/>
+          <Include href="_Drums/DetailDrumBig.xml" itemID="57a31342-000005fb" lastModified="1470322825"/>
+          <Include href="_Drums/DetailDrumFast.xml" itemID="57a3130e-000005f7" lastModified="1470322829"/>
+          <Include href="_Drums/DetailDrumSmall.xml" itemID="57a31333-000005fa" lastModified="1470322833"/>
+          <Include href="_Drums/TargetDrumEnemy.xml" itemID="57a311e6-000005d2" lastModified="1470322843"/>
+          <Include href="_Drums/TargetDrumItem.xml" itemID="57a3116a-000005c5" lastModified="1470322848"/>
+          <Include href="_Drums/TargetDrumItself.xml" itemID="57a3108c-000005b4" lastModified="1470322852"/>
+          <Include href="_DrumTabs/_Graphics/BlueTab.xml" loadImmediate="false" itemID="57a1fe5c-0000012b" lastModified="1470319631"/>
+          <Include href="_DrumTabs/_Graphics/GreenTab.xml" loadImmediate="false" itemID="57a1ff90-00000136" lastModified="1470319647"/>
+          <Include href="_DrumTabs/_Graphics/PurpleTab.xml" loadImmediate="false" itemID="57a200b7-00000142" lastModified="1470319643"/>
           <Include href="_DrumTabs/ActionDrumTab.xml" itemIcon="0" itemID="57a1fd26-00000122" lastModified="1470234635"/>
           <Include href="_DrumTabs/DetailDrumTab.xml" itemIcon="0" itemID="57a20061-00000140" lastModified="1470234938"/>
           <Include href="_DrumTabs/TargetDrumTab.xml" itemIcon="0" itemID="57a1ff20-00000134" lastModified="1470234649"/>
-          <Include href="GoDrumGameScene.xml" itemID="57a2012b-00000146" lastModified="1470237111"/>
+          <Include href="GoDrumGameScene.xml" itemID="57a2012b-00000146" lastModified="1470324495"/>
      </symbols>
      <timelines>
           <DOMTimeline name="Scene 1">
@@ -65,25 +83,25 @@
      </persistentData>
      <PrinterSettings/>
      <publishHistory>
-          <PublishItem publishSize="644343" publishTime="1470301947" publishDebug="true"/>
-          <PublishItem publishSize="644338" publishTime="1470301933" publishDebug="true"/>
-          <PublishItem publishSize="644345" publishTime="1470301923" publishDebug="true"/>
-          <PublishItem publishSize="644314" publishTime="1470301814" publishDebug="true"/>
-          <PublishItem publishSize="644298" publishTime="1470301756"/>
-          <PublishItem publishSize="644298" publishTime="1470301752" publishDebug="true"/>
-          <PublishItem publishSize="644298" publishTime="1470301735"/>
-          <PublishItem publishSize="644292" publishTime="1470301732" publishDebug="true"/>
-          <PublishItem publishSize="644296" publishTime="1470301717"/>
-          <PublishItem publishSize="644289" publishTime="1470301716" publishDebug="true"/>
-          <PublishItem publishSize="644297" publishTime="1470301703"/>
-          <PublishItem publishSize="644301" publishTime="1470301701" publishDebug="true"/>
-          <PublishItem publishSize="644281" publishTime="1470301678"/>
-          <PublishItem publishSize="644279" publishTime="1470301677" publishDebug="true"/>
-          <PublishItem publishSize="644286" publishTime="1470301665"/>
-          <PublishItem publishSize="644284" publishTime="1470301664" publishDebug="true"/>
-          <PublishItem publishSize="644288" publishTime="1470301642"/>
-          <PublishItem publishSize="644294" publishTime="1470301626" publishDebug="true"/>
-          <PublishItem publishSize="644294" publishTime="1470301608"/>
-          <PublishItem publishSize="644289" publishTime="1470301498" publishDebug="true"/>
+          <PublishItem publishSize="649023" publishTime="1470324772" publishDebug="true"/>
+          <PublishItem publishSize="649010" publishTime="1470324733"/>
+          <PublishItem publishSize="649016" publishTime="1470324731" publishDebug="true"/>
+          <PublishItem publishSize="649053" publishTime="1470324716"/>
+          <PublishItem publishSize="649044" publishTime="1470324714" publishDebug="true"/>
+          <PublishItem publishSize="649047" publishTime="1470324667"/>
+          <PublishItem publishSize="649037" publishTime="1470324664" publishDebug="true"/>
+          <PublishItem publishSize="649063" publishTime="1470324641" publishDebug="true"/>
+          <PublishItem publishSize="649104" publishTime="1470324638" publishDebug="true"/>
+          <PublishItem publishSize="649105" publishTime="1470324627" publishDebug="true"/>
+          <PublishItem publishSize="649112" publishTime="1470324576"/>
+          <PublishItem publishSize="649118" publishTime="1470324575" publishDebug="true"/>
+          <PublishItem publishSize="649109" publishTime="1470324557" publishDebug="true"/>
+          <PublishItem publishSize="649078" publishTime="1470324519"/>
+          <PublishItem publishSize="649071" publishTime="1470324517" publishDebug="true"/>
+          <PublishItem publishSize="62422" publishTime="1470324514" publishDebug="true"/>
+          <PublishItem publishSize="649106" publishTime="1470324491"/>
+          <PublishItem publishSize="649116" publishTime="1470324489" publishDebug="true"/>
+          <PublishItem publishSize="649118" publishTime="1470324412"/>
+          <PublishItem publishSize="649076" publishTime="1470324342"/>
      </publishHistory>
 </DOMDocument>

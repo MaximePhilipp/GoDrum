@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="GoDrumGameScene" itemID="57a2012b-00000146" linkageExportForAS="true" linkageClassName="io.voodoo.game.GoDrumGameScene" lastModified="1470237111">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="GoDrumGameScene" itemID="57a2012b-00000146" linkageExportForAS="true" linkageClassName="io.voodoo.game.GoDrumGameScene" lastModified="1470324495" lastUniqueIdentifier="3">
   <timeline>
     <DOMTimeline name="GoDrumGameScene">
       <layers>
@@ -28,6 +28,38 @@
                     <Edge strokeStyle="1" edges="!20480 0|20480 15360!0 15360|0 0"/>
                   </edges>
                 </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="DrumsLayer" color="#9933CC" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_DrumBoxes/ActionsDrumsBox" name="actionsDrumBox">
+                  <matrix>
+                    <Matrix tx="1406.4" ty="384"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_DrumBoxes/TargetsDrumsBox" name="targetsDrumBox">
+                  <matrix>
+                    <Matrix tx="1562.1" ty="384"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_DrumBoxes/DetailsDrumsBox" name="detailsDrumBox">
+                  <matrix>
+                    <Matrix tx="1711.8" ty="384"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
               </elements>
             </DOMFrame>
           </frames>
