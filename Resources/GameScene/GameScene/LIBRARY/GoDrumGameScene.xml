@@ -1,0 +1,70 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="GoDrumGameScene" itemID="57a2012b-00000146" linkageExportForAS="true" linkageClassName="io.voodoo.game.GoDrumGameScene" lastModified="1470237111">
+  <timeline>
+    <DOMTimeline name="GoDrumGameScene">
+      <layers>
+        <DOMLayer name="Guide" color="#9933CC" locked="true" autoNamed="false" layerType="guide">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <strokes>
+                    <StrokeStyle index="1">
+                      <SolidStroke scaleMode="normal">
+                        <fill>
+                          <SolidColor color="#003366"/>
+                        </fill>
+                      </SolidStroke>
+                    </StrokeStyle>
+                    <StrokeStyle index="2">
+                      <SolidStroke scaleMode="normal">
+                        <fill>
+                          <SolidColor color="#FF0000"/>
+                        </fill>
+                      </SolidStroke>
+                    </StrokeStyle>
+                  </strokes>
+                  <edges>
+                    <Edge strokeStyle="2" edges="!0 0|20480 0!20480 0|23893 0!23893 0|23893 15360!23893 15360|20480 15360!20480 15360|0 15360!0 15360|-3413 15360!-3413 15360|-3413 0!-3413 0|0 0"/>
+                    <Edge strokeStyle="1" edges="!20480 0|20480 15360!0 15360|0 0"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="TabsLayer" color="#4F80FF" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_DrumTabs/ActionDrumTab" name="actionDrumTab" symbolType="button">
+                  <matrix>
+                    <Matrix ty="124.8"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_DrumTabs/TargetDrumTab" name="targetDrumTab" symbolType="button">
+                  <matrix>
+                    <Matrix ty="384"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_DrumTabs/DetailDrumTab" name="detailDrumTab" symbolType="button">
+                  <matrix>
+                    <Matrix ty="643.2"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

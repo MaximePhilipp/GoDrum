@@ -1,0 +1,39 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_DrumTabs/TargetDrumTab" itemID="57a1ff20-00000134" linkageExportForAS="true" linkageClassName="io.voodoo.game.display.TargetDrumTab" symbolType="button" lastModified="1470234649">
+  <timeline>
+    <DOMTimeline name="TargetDrumTab" currentFrame="2">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4F80FF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" duration="2" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_DrumTabs/_Graphics/GreenTab">
+                  <matrix>
+                    <Matrix tx="44"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="2" duration="2" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_DrumTabs/_Graphics/GreenTab" centerPoint3DX="44">
+                  <matrix>
+                    <Matrix a="1.09999084472656" d="1.09999084472656" tx="44"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <filters>
+                    <GlowFilter blurX="64" blurY="64" color="#FFFFFF" quality="3" strength="0.5"/>
+                  </filters>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

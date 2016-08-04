@@ -1,0 +1,89 @@
+<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" backgroundColor="#999999" width="1024" height="768" frameRate="60" currentTimeline="1" xflVersion="2.4" creatorInfo="Adobe Flash Professional CC" platform="Windows" versionInfo="Saved by Adobe Flash Windows 13.1 build 226" majorVersion="13" minorVersion="1" buildNumber="226" vanishingPoint3DX="512" vanishingPoint3DY="384" nextSceneIdentifier="2" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false" filetypeGUID="DD0DDBBF-5BEF-45B2-9F24-A3048D2A676F">
+     <folders>
+          <DOMFolderItem name="_DrumTabs" itemID="57a1fe23-00000129" isExpanded="true"/>
+          <DOMFolderItem name="_DrumTabs/_Graphics" itemID="57a201d0-00000162" isExpanded="true"/>
+          <DOMFolderItem name="_Sounds" itemID="57a2098d-0000020b" isExpanded="true"/>
+     </folders>
+     <media>
+          <DOMSoundItem name="_Sounds/funk-beat.wav" itemID="57a20c47-0000028c" linkageExportForAS="true" linkageClassName="io.voodoo.game.sounds.Beat" sourceExternalFilepath="../LIBRARY/_Sounds/funk-beat.wav" sourceLastImported="1470237279" href="_Sounds/funk-beat.wav" soundDataHRef="M 1 1470237111.dat" format="44kHz 16bit Stereo" sampleCount="336000" exportFormat="5" exportBits="13" dataLength="1344000"/>
+     </media>
+     <symbols>
+          <Include href="_DrumTabs/_Graphics/BlueTab.xml" loadImmediate="false" itemID="57a1fe5c-0000012b" lastModified="1470238845"/>
+          <Include href="_DrumTabs/_Graphics/GreenTab.xml" loadImmediate="false" itemID="57a1ff90-00000136" lastModified="1470238856"/>
+          <Include href="_DrumTabs/_Graphics/PurpleTab.xml" loadImmediate="false" itemID="57a200b7-00000142" lastModified="1470238864"/>
+          <Include href="_DrumTabs/ActionDrumTab.xml" itemIcon="0" itemID="57a1fd26-00000122" lastModified="1470234635"/>
+          <Include href="_DrumTabs/DetailDrumTab.xml" itemIcon="0" itemID="57a20061-00000140" lastModified="1470234938"/>
+          <Include href="_DrumTabs/TargetDrumTab.xml" itemIcon="0" itemID="57a1ff20-00000134" lastModified="1470234649"/>
+          <Include href="GoDrumGameScene.xml" itemID="57a2012b-00000146" lastModified="1470237111"/>
+     </symbols>
+     <timelines>
+          <DOMTimeline name="Scene 1">
+               <layers>
+                    <DOMLayer name="Guide" color="#9933CC" locked="true" autoNamed="false" layerType="guide">
+                         <frames>
+                              <DOMFrame index="0" keyMode="9728">
+                                   <elements>
+                                        <DOMShape>
+                                             <strokes>
+                                                  <StrokeStyle index="1">
+                                                       <SolidStroke scaleMode="normal">
+                                                            <fill>
+                                                                 <SolidColor color="#003366"/>
+                                                            </fill>
+                                                       </SolidStroke>
+                                                  </StrokeStyle>
+                                                  <StrokeStyle index="2">
+                                                       <SolidStroke scaleMode="normal">
+                                                            <fill>
+                                                                 <SolidColor color="#FF0000"/>
+                                                            </fill>
+                                                       </SolidStroke>
+                                                  </StrokeStyle>
+                                             </strokes>
+                                             <edges>
+                                                  <Edge strokeStyle="2" edges="!0 0|20480 0!20480 0|23893 0!23893 0|23893 15360!23893 15360|20480 15360!20480 15360|0 15360!0 15360|-3413 15360!-3413 15360|-3413 0!-3413 0|0 0"/>
+                                                  <Edge strokeStyle="1" edges="!20480 0|20480 15360!0 15360|0 0"/>
+                                             </edges>
+                                        </DOMShape>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="Layer 1" color="#4F80FF" current="true" isSelected="true">
+                         <frames>
+                              <DOMFrame index="0" keyMode="9728">
+                                   <elements/>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+               </layers>
+          </DOMTimeline>
+     </timelines>
+     <persistentData>
+          <PD n="ane.tmp.unzipped.folder" v="C:\Users\Maxime\AppData\Local\Temp\Tmp_ANE_File_Unzipped_Packages"/>
+          <PD n="com.air.sdk.path"/>
+     </persistentData>
+     <PrinterSettings/>
+     <publishHistory>
+          <PublishItem publishSize="644343" publishTime="1470301947" publishDebug="true"/>
+          <PublishItem publishSize="644338" publishTime="1470301933" publishDebug="true"/>
+          <PublishItem publishSize="644345" publishTime="1470301923" publishDebug="true"/>
+          <PublishItem publishSize="644314" publishTime="1470301814" publishDebug="true"/>
+          <PublishItem publishSize="644298" publishTime="1470301756"/>
+          <PublishItem publishSize="644298" publishTime="1470301752" publishDebug="true"/>
+          <PublishItem publishSize="644298" publishTime="1470301735"/>
+          <PublishItem publishSize="644292" publishTime="1470301732" publishDebug="true"/>
+          <PublishItem publishSize="644296" publishTime="1470301717"/>
+          <PublishItem publishSize="644289" publishTime="1470301716" publishDebug="true"/>
+          <PublishItem publishSize="644297" publishTime="1470301703"/>
+          <PublishItem publishSize="644301" publishTime="1470301701" publishDebug="true"/>
+          <PublishItem publishSize="644281" publishTime="1470301678"/>
+          <PublishItem publishSize="644279" publishTime="1470301677" publishDebug="true"/>
+          <PublishItem publishSize="644286" publishTime="1470301665"/>
+          <PublishItem publishSize="644284" publishTime="1470301664" publishDebug="true"/>
+          <PublishItem publishSize="644288" publishTime="1470301642"/>
+          <PublishItem publishSize="644294" publishTime="1470301626" publishDebug="true"/>
+          <PublishItem publishSize="644294" publishTime="1470301608"/>
+          <PublishItem publishSize="644289" publishTime="1470301498" publishDebug="true"/>
+     </publishHistory>
+</DOMDocument>
