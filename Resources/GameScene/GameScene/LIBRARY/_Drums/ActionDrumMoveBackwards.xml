@@ -27,7 +27,7 @@
                     </StrokeStyle>
                   </strokes>
                   <edges>
-                    <Edge strokeStyle="1" edges="!-250 -516|-672 -17!-672 -17|-210 409!571 -17|-672 -17"/>
+                    <Edge strokeStyle="1" edges="!-250 -516|-672 -17!571 -17|-672 -17!-672 -17|-210 409"/>
                   </edges>
                 </DOMShape>
               </elements>
@@ -45,7 +45,7 @@
                     </StrokeStyle>
                   </strokes>
                   <edges>
-                    <Edge strokeStyle="1" edges="!-288 -581|-781 -19!-781 -19|-241 461!670 -19|-781 -19"/>
+                    <Edge strokeStyle="1" edges="!-288 -581|-781 -19!670 -19|-781 -19!-781 -19|-241 461"/>
                   </edges>
                 </DOMShape>
               </elements>
@@ -56,7 +56,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_Drums/_Graphics/DrumSprite" selected="true">
+                <DOMSymbolInstance libraryItemName="_Drums/_Graphics/DrumSprite">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>

@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_DrumBoxes/ActionsDrumsBox" itemID="57a34ee2-00001111" linkageExportForAS="true" linkageBaseClass="flash.display.Sprite" linkageClassName="io.voodoo.game.display.drumboxes.ActionsDrumsBox" lastModified="1470324368" isSpriteSubclass="true">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_DrumBoxes/ActionsDrumsBox" itemID="57a34ee2-00001111" linkageExportForAS="true" linkageBaseClass="flash.display.Sprite" linkageClassName="io.voodoo.game.display.drumboxes.ActionsDrumsBox" lastModified="1470352864" isSpriteSubclass="true">
   <timeline>
     <DOMTimeline name="ActionsDrumsBox">
       <layers>
@@ -14,7 +14,7 @@
                     <Point y="-0.05"/>
                   </transformationPoint>
                   <color>
-                    <Color alphaMultiplier="0.6015625"/>
+                    <Color alphaMultiplier="0.69921875"/>
                   </color>
                 </DOMSymbolInstance>
                 <DOMSymbolInstance libraryItemName="_Drums/ActionDrumMoveForward" name="moveForwardDrum">

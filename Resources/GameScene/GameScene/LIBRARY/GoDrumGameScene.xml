@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="GoDrumGameScene" itemID="57a2012b-00000146" linkageExportForAS="true" linkageClassName="io.voodoo.game.GoDrumGameScene" lastModified="1470327621" lastUniqueIdentifier="3">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="GoDrumGameScene" itemID="57a2012b-00000146" linkageExportForAS="true" linkageClassName="io.voodoo.game.GoDrumGameScene" lastModified="1470390664" lastUniqueIdentifier="3">
   <timeline>
     <DOMTimeline name="GoDrumGameScene">
       <layers>
@@ -70,7 +70,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_DrumTabs/ActionDrumTab" name="actionDrumTab" symbolType="button">
                   <matrix>
-                    <Matrix ty="124.8"/>
+                    <Matrix a="1.5" ty="124.8"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -78,7 +78,7 @@
                 </DOMSymbolInstance>
                 <DOMSymbolInstance libraryItemName="_DrumTabs/TargetDrumTab" name="targetDrumTab" symbolType="button">
                   <matrix>
-                    <Matrix ty="384"/>
+                    <Matrix a="1.5" ty="384"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -86,7 +86,7 @@
                 </DOMSymbolInstance>
                 <DOMSymbolInstance libraryItemName="_DrumTabs/DetailDrumTab" name="detailDrumTab" symbolType="button">
                   <matrix>
-                    <Matrix ty="643.2"/>
+                    <Matrix a="1.5" ty="643.2"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>

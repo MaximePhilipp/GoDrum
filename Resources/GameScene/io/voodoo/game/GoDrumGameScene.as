@@ -2,6 +2,7 @@ package io.voodoo.game {
 	import com.deboutludo.core.MovieClipModule;
 	import com.deboutludo.core.Sequence;
 	import com.deboutludo.display.Display;
+	import com.deboutludo.events.AppEvent;
 	import com.greensock.TweenLite;
 	import com.greensock.TweenMax;
 	import com.greensock.easing.Power2;
@@ -12,8 +13,11 @@ package io.voodoo.game {
 	import flash.display.Sprite;
 	import flash.events.KeyboardEvent;
 	import flash.events.MouseEvent;
+	import flash.events.TouchEvent;
 	import flash.geom.Rectangle;
 	import flash.ui.Keyboard;
+	import flash.ui.Multitouch;
+	import flash.ui.MultitouchInputMode;
 	import flash.utils.getTimer;
 	
 	import io.voodoo.game.display.drumboxes.ActionsDrumsBox;
@@ -32,6 +36,7 @@ package io.voodoo.game {
 	import io.voodoo.game.drums.targets.TargetDrumEnemy;
 	import io.voodoo.game.drums.targets.TargetDrumItem;
 	import io.voodoo.game.drums.targets.TargetDrumItself;
+	import io.voodoo.game.maps.Map1;
 	import io.voodoo.game.sounds.Beat2;
 	
 	
@@ -43,7 +48,7 @@ package io.voodoo.game {
 		
 		// CONSTANTS :
 		// The time between each beat, in ms.
-		private static const BEAT_PERIOD:int = 666;
+		public static const BEAT_PERIOD:int = 666;
 		private static const BEAT_DISPLAYER_MARGIN:int = 10;
 		private static const BEAT_DISPLAYER_THICKNESS:int = 5;
 		private static const DRUMS_APPEAR_ANIMATION_DURATION:Number = 0.1;
@@ -58,10 +63,12 @@ package io.voodoo.game {
 		
 		
 		// PROPERTIES :
+		private static var _instance:GoDrumGameScene;
 		private var drumHandler:DrumHandler;
 		private var beatDisplayer:Sprite;
 		private var beatDisplayerTween:TweenMax;
 		private var screen:Rectangle;
+		private var map:Map1;
 		private var _currentDrumTab:String;
 		public function get currentDrumTab():String {
 			return this._currentDrumTab;
@@ -83,6 +90,10 @@ package io.voodoo.game {
 		private var targetDrumsTabActivated:Boolean;
 		private var detailDrumsTabActivated:Boolean;
 		
+		public static function get instance():GoDrumGameScene {
+			return _instance;
+		}
+		
 		// Debug
 		private var keysDown:Vector.<uint>;
 		private var actionTabUpState:DisplayObject;
@@ -96,24 +107,31 @@ package io.voodoo.game {
 		// CONSTRUCTOR :
 		public function GoDrumGameScene() {
 			super();
+			_instance = this;
 		}
 		
 		
 		// LIFECYCLE :
 		override protected function onPrepare():void {
-			cm.addListener(actionDrumTab, MouseEvent.ROLL_OVER, onActionDrumTabTouched);
-			cm.addListener(actionDrumTab, MouseEvent.MOUSE_DOWN, onActionDrumTabTouched);
-			cm.addListener(targetDrumTab, MouseEvent.ROLL_OVER, onTargetDrumTabTouched);
-			cm.addListener(targetDrumTab, MouseEvent.MOUSE_DOWN, onTargetDrumTabTouched);
-			cm.addListener(detailDrumTab, MouseEvent.ROLL_OVER, onDetailDrumTabTouched);
-			cm.addListener(detailDrumTab, MouseEvent.MOUSE_DOWN, onDetailDrumTabTouched);
+			Multitouch.inputMode = MultitouchInputMode.TOUCH_POINT;
 			
-			cm.addListener(actionDrumTab, MouseEvent.MOUSE_UP, onActionDrumTabReleased);
-			cm.addListener(actionDrumTab, MouseEvent.RELEASE_OUTSIDE, onActionDrumTabReleased);
-			cm.addListener(targetDrumTab, MouseEvent.MOUSE_UP, onTargetDrumTabReleased);
-			cm.addListener(targetDrumTab, MouseEvent.RELEASE_OUTSIDE, onTargetDrumTabReleased);
-			cm.addListener(detailDrumTab, MouseEvent.MOUSE_UP, onDetailDrumTabReleased);
-			cm.addListener(detailDrumTab, MouseEvent.RELEASE_OUTSIDE, onDetailDrumTabReleased);
+			cm.addListener(actionDrumTab, TouchEvent.TOUCH_ROLL_OVER, onActionDrumTabTouched);
+			cm.addListener(targetDrumTab, TouchEvent.TOUCH_ROLL_OVER, onTargetDrumTabTouched);
+			cm.addListener(detailDrumTab, TouchEvent.TOUCH_ROLL_OVER, onDetailDrumTabTouched);
+			
+			cm.addListener(actionDrumTab, TouchEvent.TOUCH_END, onActionDrumTabReleased);
+			cm.addListener(actionDrumTab, TouchEvent.TOUCH_OUT, onActionDrumTabReleased);
+			cm.addListener(targetDrumTab, TouchEvent.TOUCH_END, onTargetDrumTabReleased);
+			cm.addListener(targetDrumTab, TouchEvent.TOUCH_OUT, onTargetDrumTabReleased);
+			cm.addListener(detailDrumTab, TouchEvent.TOUCH_END, onDetailDrumTabReleased);
+			cm.addListener(detailDrumTab, TouchEvent.TOUCH_OUT, onDetailDrumTabReleased);
+			
+			
+			// Registers for the commands
+			AppEvent.addListener(Command.MOVE_FORWARD_EVENT, onMoveForward);
+			AppEvent.addListener(Command.MOVE_BACKWARDS_EVENT, onMoveBackwards);
+			AppEvent.addListener(Command.ATTACK_EVENT, onAttack);
+			
 			
 			generateDrums();
 			
@@ -127,10 +145,13 @@ package io.voodoo.game {
 			this.targetDrumTab.x = screen.x - 20;
 			this.detailDrumTab.x = screen.x - 20;
 			
-			this.actionDrumTab.alpha = this.targetDrumTab.alpha = this.detailDrumTab.alpha = 0.6;
+			this.actionDrumTab.alpha = this.targetDrumTab.alpha = this.detailDrumTab.alpha = 0.7;
 			
 			this.generateBeatDisplayer();
 			this.addChildAt(this.beatDisplayer, 0);
+			
+			this.map = new Map1();
+			this.addChildAt(this.map, 0);
 			
 			super.onShow(parent, index);
 		}
@@ -188,17 +209,10 @@ package io.voodoo.game {
 		}
 		
 		
-		
-		
-		
-		
-		
-		
-		
 		// DISPLAY :
 		private function updateAvailableDrums():void {
 			
-			this.actionDrumTab.alpha = this.targetDrumTab.alpha = this.detailDrumTab.alpha = 0.6;
+			this.actionDrumTab.alpha = this.targetDrumTab.alpha = this.detailDrumTab.alpha = 0.7;
 			
 			if(_currentDrumTab == Drum.ACTION) {
 				this.setChildIndex(actionDrumTab, this.numChildren - 1);
@@ -231,44 +245,54 @@ package io.voodoo.game {
 		
 		
 		
+		// COMMANDS :
+		private function onMoveForward():void {
+			// TODO make the characters walk.
+			map.moveForward();
+		}
+		
+		private function onMoveBackwards():void {
+			// TODO make the characters walk backwards.
+			map.moveBackwards();
+		}
+		
+		private function onAttack():void {
+			// TODO
+		}
+		
+		
 		
 		
 		// CALLBAKCS :
-		private function onActionDrumTabTouched(event:MouseEvent):void {
-			if(!event.buttonDown)
-				return;
+		private function onActionDrumTabTouched(event:TouchEvent):void {
 			currentDrumTab = Drum.ACTION;
 			actionDrumsTabActivated = true;
 			targetDrumsTabActivated = detailDrumsTabActivated = false;
 		}
 		
-		private function onTargetDrumTabTouched(event:MouseEvent):void {
-			if(!event.buttonDown)
-				return;
+		private function onTargetDrumTabTouched(event:TouchEvent):void {
 			currentDrumTab = Drum.TARGET;
 			targetDrumsTabActivated = true;
 			actionDrumsTabActivated = detailDrumsTabActivated = false;
 		}
 		
-		private function onDetailDrumTabTouched(event:MouseEvent):void {
-			if(!event.buttonDown)
-				return;
+		private function onDetailDrumTabTouched(event:TouchEvent):void {
 			currentDrumTab = Drum.DETAIL;
 			detailDrumsTabActivated = true;
 			actionDrumsTabActivated = targetDrumsTabActivated = false;
 		}
 		
-		private function onActionDrumTabReleased(event:MouseEvent):void {
+		private function onActionDrumTabReleased(event:TouchEvent):void {
 			actionDrumsTabActivated = false;
 			checkTabsActivation();
 		}
 		
-		private function onTargetDrumTabReleased(event:MouseEvent):void {
+		private function onTargetDrumTabReleased(event:TouchEvent):void {
 			targetDrumsTabActivated = false;
 			checkTabsActivation();
 		}
 		
-		private function onDetailDrumTabReleased(event:MouseEvent):void {
+		private function onDetailDrumTabReleased(event:TouchEvent):void {
 			detailDrumsTabActivated = false;
 			checkTabsActivation();
 		}
@@ -320,8 +344,37 @@ package io.voodoo.game {
 				else if(keysDown[i] == Keyboard.E)
 					tmpDrumTab = Drum.DETAIL;
 				
-				if(keysDown[i] == Keyboard.P) {
-					drumHandler.registerDrum("toto", getTimer());
+				if(keysDown[i] == Keyboard.NUMPAD_1) {
+					if(currentDrumTab == Drum.ACTION)
+						drums[0].onDrumTapped(null);
+					else if(currentDrumTab == Drum.TARGET)
+						drums[5].onDrumTapped(null);
+					else if(currentDrumTab == Drum.DETAIL)
+						drums[8].onDrumTapped(null);
+				}
+				else if(keysDown[i] == Keyboard.NUMPAD_2) {
+					if(currentDrumTab == Drum.ACTION)
+						drums[1].onDrumTapped(null);
+					else if(currentDrumTab == Drum.TARGET)
+						drums[6].onDrumTapped(null);
+					else if(currentDrumTab == Drum.DETAIL)
+						drums[9].onDrumTapped(null);
+				}
+				else if(keysDown[i] == Keyboard.NUMPAD_3) {
+					if(currentDrumTab == Drum.ACTION)
+						drums[2].onDrumTapped(null);
+					else if(currentDrumTab == Drum.TARGET)
+						drums[7].onDrumTapped(null);
+					else if(currentDrumTab == Drum.DETAIL)
+						drums[10].onDrumTapped(null);
+				}
+				else if(keysDown[i] == Keyboard.NUMPAD_4) {
+					if(currentDrumTab == Drum.ACTION)
+						drums[3].onDrumTapped(null);
+				}
+				else if(keysDown[i] == Keyboard.NUMPAD_5) {
+					if(currentDrumTab == Drum.ACTION)
+						drums[4].onDrumTapped(null);
 				}
 			}
 			

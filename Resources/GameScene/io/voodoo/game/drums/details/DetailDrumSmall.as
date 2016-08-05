@@ -3,6 +3,7 @@ package io.voodoo.game.drums.details {
 	
 	import io.voodoo.game.DrumHandler;
 	import io.voodoo.game.drums.DetailDrum;
+	import io.voodoo.game.sounds.Drum08;
 	
 	
 	/**
@@ -14,8 +15,7 @@ package io.voodoo.game.drums.details {
 		public function DetailDrumSmall() {
 			super();
 			this._subType = DetailDrum.SMALL;
-			// TODO
-			this.sound = sound;
+			this._soundClass = Drum08;
 		}
 	}
 }

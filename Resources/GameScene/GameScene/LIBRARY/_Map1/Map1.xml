@@ -1,0 +1,106 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Map1/Map1" itemID="57a3c490-0000076c" linkageExportForAS="true" linkageBaseClass="flash.display.Sprite" linkageClassName="io.voodoo.game.maps.Map1" lastModified="1470390697" isSpriteSubclass="true">
+  <timeline>
+    <DOMTimeline name="Map1" guides='&lt;guidelines&gt;&lt;guideline direction="h"&gt;-193&lt;/guideline&gt;&lt;/guidelines&gt;'>
+      <layers>
+        <DOMLayer name="Guide" color="#9933CC" locked="true" autoNamed="false" layerType="guide">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <strokes>
+                    <StrokeStyle index="1">
+                      <SolidStroke scaleMode="normal" sharpCorners="true">
+                        <fill>
+                          <SolidColor color="#003366"/>
+                        </fill>
+                      </SolidStroke>
+                    </StrokeStyle>
+                    <StrokeStyle index="2">
+                      <SolidStroke scaleMode="normal" sharpCorners="true">
+                        <fill>
+                          <SolidColor color="#FF0000"/>
+                        </fill>
+                      </SolidStroke>
+                    </StrokeStyle>
+                  </strokes>
+                  <edges>
+                    <Edge strokeStyle="2" edges="!22240 0|25653 0!25653 15360|22240 15360"/>
+                    <Edge strokeStyle="1" edges="!22240 0|22240 15360"/>
+                    <Edge strokeStyle="2" edges="!25653 0|25653 15360"/>
+                    <Edge strokeStyle="1" edges="!1760 15360|1760 0"/>
+                    <Edge strokeStyle="2" edges="!22240 15360|1760 15360!1760 0|22240 0!-1653 15360|-1653 0!1760 15360|-1653 15360!-1653 0|1760 0"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="background_2" color="#9933CC" locked="true" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="_Map1/_Graphics/game_background.ai" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="1.70648193359375" d="1.70648193359375" tx="-82.75"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="300.1" y="225"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_Map1/_Graphics/game_background.ai" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="1.70648193359375" d="1.70648193359375" tx="940.7"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="300.1" y="225"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="_Map1/_Graphics/game_background.ai" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="1.70648193359375" d="1.70648193359375" tx="1964.4"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="300.1" y="225"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="background_1" color="#FF800A" locked="true" autoNamed="false" visible="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance libraryItemName="_Map1/_Graphics/37-affinity-game-background-600.jpg">
+                  <matrix>
+                    <Matrix a="1.7066650390625" d="1.7066650390625" tx="-82.65"/>
+                  </matrix>
+                </DOMBitmapInstance>
+                <DOMBitmapInstance libraryItemName="_Map1/_Graphics/37-affinity-game-background-600.jpg">
+                  <matrix>
+                    <Matrix a="1.7066650390625" d="1.7066650390625" tx="940.4" ty="-0.1"/>
+                  </matrix>
+                </DOMBitmapInstance>
+                <DOMBitmapInstance libraryItemName="_Map1/_Graphics/37-affinity-game-background-600.jpg">
+                  <matrix>
+                    <Matrix a="1.7066650390625" d="1.7066650390625" tx="1964.3" ty="-0.05"/>
+                  </matrix>
+                </DOMBitmapInstance>
+                <DOMBitmapInstance libraryItemName="_Map1/_Graphics/37-affinity-game-background-600.jpg">
+                  <matrix>
+                    <Matrix a="1.7066650390625" d="1.7066650390625" tx="2987" ty="1.7"/>
+                  </matrix>
+                </DOMBitmapInstance>
+                <DOMBitmapInstance libraryItemName="_Map1/_Graphics/37-affinity-game-background-600.jpg">
+                  <matrix>
+                    <Matrix a="1.7066650390625" d="1.7066650390625" tx="4010.2" ty="1.7"/>
+                  </matrix>
+                </DOMBitmapInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

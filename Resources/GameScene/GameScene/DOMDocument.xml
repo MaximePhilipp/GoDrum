@@ -1,19 +1,36 @@
-<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" backgroundColor="#999999" width="1200" height="768" frameRate="60" currentTimeline="1" xflVersion="2.4" creatorInfo="Adobe Flash Professional CC" platform="Windows" versionInfo="Saved by Adobe Flash Windows 13.1 build 226" majorVersion="13" minorVersion="1" buildNumber="226" viewAngle3D="62.7696818626324" vanishingPoint3DX="512" vanishingPoint3DY="384" nextSceneIdentifier="2" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false" filetypeGUID="DD0DDBBF-5BEF-45B2-9F24-A3048D2A676F">
+<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" backgroundColor="#999999" width="1024" height="768" frameRate="30" currentTimeline="1" xflVersion="2.4" creatorInfo="Adobe Flash Professional CC" platform="Windows" versionInfo="Saved by Adobe Flash Windows 13.1 build 226" majorVersion="13" minorVersion="1" buildNumber="226" rulerVisible="true" vanishingPoint3DX="512" vanishingPoint3DY="384" nextSceneIdentifier="2" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false" filetypeGUID="DD0DDBBF-5BEF-45B2-9F24-A3048D2A676F">
      <folders>
           <DOMFolderItem name="_DrumBoxes" itemID="57a35d55-00001478" isExpanded="true"/>
           <DOMFolderItem name="_Drums" itemID="57a309d0-00000568" isExpanded="true"/>
           <DOMFolderItem name="_Drums/_Graphics" itemID="57a309d8-0000056c" isExpanded="true"/>
           <DOMFolderItem name="_DrumTabs" itemID="57a1fe23-00000129" isExpanded="true"/>
           <DOMFolderItem name="_DrumTabs/_Graphics" itemID="57a201d0-00000162" isExpanded="true"/>
-          <DOMFolderItem name="_Sounds" itemID="57a2098d-0000020b" isExpanded="true"/>
+          <DOMFolderItem name="_Map1" itemID="57a3c587-00000771" isExpanded="true"/>
+          <DOMFolderItem name="_Map1/_Graphics" itemID="57a3c5a1-00000777" isExpanded="true"/>
+          <DOMFolderItem name="_Sounds" itemID="57a2098d-0000020b"/>
      </folders>
      <media>
+          <DOMBitmapItem name="_Map1/_Graphics/37-affinity-game-background-600.jpg" itemID="57a3c8db-000007ba" sourceExternalFilepath="./LIBRARY/_Map1/_Graphics/37-affinity-game-background-600.jpg" sourceLastImported="1470350671" externalFileSize="168588" allowSmoothing="true" quality="50" href="_Map1/_Graphics/37-affinity-game-background-600.jpg" bitmapDataHRef="M 3 1470350769.dat" frameRight="12000" frameBottom="9000" isJPEG="true"/>
           <DOMSoundItem name="_Sounds/Beat_sound" itemID="57a36b8f-00001913" linkageExportForAS="true" linkageClassName="io.voodoo.game.sounds.Beat2" sourceExternalFilepath="./LIBRARY/_Sounds/Beat_sound.wav" sourceLastImported="1470327683" externalFileSize="354124" href="_Sounds/Beat_sound.wav" soundDataHRef="M 2 1470327622.dat" format="44kHz 16bit Stereo" sampleCount="88461" exportFormat="5" exportBits="13" dataLength="353844"/>
+          <DOMSoundItem name="_Sounds/Drum_01.wav" itemID="57a4495f-0000037f" linkageExportForAS="true" linkageClassName="io.voodoo.game.sounds.Drum01" sourceExternalFilepath="./LIBRARY/_Sounds/Drum_01.wav" sourceLastImported="1470383360" externalFileSize="211068" href="_Sounds/Drum_01.wav" soundDataHRef="M 11 1470383090.dat" format="44kHz 16bit Stereo" sampleCount="52736" exportFormat="5" exportBits="13" dataLength="210944"/>
+          <DOMSoundItem name="_Sounds/Drum_02.wav" itemID="57a4495f-00000380" linkageExportForAS="true" linkageClassName="io.voodoo.game.sounds.Drum02" sourceExternalFilepath="./LIBRARY/_Sounds/Drum_02.wav" sourceLastImported="1470383371" externalFileSize="65536" href="_Sounds/Drum_02.wav" soundDataHRef="M 12 1470383090.dat" format="44kHz 16bit Mono" sampleCount="22740" exportFormat="5" exportBits="13" dataLength="45480"/>
+          <DOMSoundItem name="_Sounds/Drum_03.wav" itemID="57a4495f-00000381" linkageExportForAS="true" linkageClassName="io.voodoo.game.sounds.Drum03" sourceExternalFilepath="./LIBRARY/_Sounds/Drum_03.wav" sourceLastImported="1470383473" externalFileSize="49328" href="_Sounds/Drum_03.wav" soundDataHRef="M 13 1470383090.dat" format="44kHz 16bit Stereo" sampleCount="12273" exportFormat="5" exportBits="13" dataLength="49092"/>
+          <DOMSoundItem name="_Sounds/Drum_04.wav" itemID="57a4495f-00000382" linkageExportForAS="true" linkageClassName="io.voodoo.game.sounds.Drum04" sourceExternalFilepath="./LIBRARY/_Sounds/Drum_04.wav" sourceLastImported="1470383475" externalFileSize="253996" href="_Sounds/Drum_04.wav" soundDataHRef="M 14 1470383090.dat" format="44kHz 16bit Stereo" sampleCount="63488" exportFormat="5" exportBits="13" dataLength="253952"/>
+          <DOMSoundItem name="_Sounds/Drum_05.wav" itemID="57a4495f-00000383" linkageExportForAS="true" linkageClassName="io.voodoo.game.sounds.Drum05" sourceExternalFilepath="./LIBRARY/_Sounds/Drum_05.wav" sourceLastImported="1470383478" externalFileSize="42718" href="_Sounds/Drum_05.wav" soundDataHRef="M 15 1470383090.dat" format="44kHz 16bit Mono" sampleCount="19311" exportFormat="5" exportBits="13" dataLength="38622"/>
+          <DOMSoundItem name="_Sounds/Drum_06.wav" itemID="57a4495f-00000384" linkageExportForAS="true" linkageClassName="io.voodoo.game.sounds.Drum06" sourceExternalFilepath="./LIBRARY/_Sounds/Drum_06.wav" sourceLastImported="1470383481" externalFileSize="59364" href="_Sounds/Drum_06.wav" soundDataHRef="M 16 1470383090.dat" format="44kHz 16bit Mono" sampleCount="29660" exportFormat="5" exportBits="13" dataLength="59320"/>
+          <DOMSoundItem name="_Sounds/Drum_07.wav" itemID="57a4495f-00000385" linkageExportForAS="true" linkageClassName="io.voodoo.game.sounds.Drum07" sourceExternalFilepath="./LIBRARY/_Sounds/Drum_07.wav" sourceLastImported="1470383486" externalFileSize="394796" href="_Sounds/Drum_07.wav" soundDataHRef="M 4 1470383090.dat" format="44kHz 16bit Stereo" sampleCount="65690" exportFormat="5" exportBits="13" dataLength="262760"/>
+          <DOMSoundItem name="_Sounds/Drum_08.wav" itemID="57a4495f-00000386" linkageExportForAS="true" linkageClassName="io.voodoo.game.sounds.Drum08" sourceExternalFilepath="./LIBRARY/_Sounds/Drum_08.wav" sourceLastImported="1470383490" externalFileSize="264538" href="_Sounds/Drum_08.wav" soundDataHRef="M 5 1470383090.dat" format="44kHz 16bit Stereo" sampleCount="60593" exportFormat="5" exportBits="13" dataLength="242372"/>
+          <DOMSoundItem name="_Sounds/Drum_09.wav" itemID="57a4495f-00000387" linkageExportForAS="true" linkageClassName="io.voodoo.game.sounds.Drum09" sourceExternalFilepath="./LIBRARY/_Sounds/Drum_09.wav" sourceLastImported="1470383494" externalFileSize="256792" href="_Sounds/Drum_09.wav" soundDataHRef="M 6 1470383090.dat" format="44kHz 16bit Stereo" sampleCount="42677" exportFormat="5" exportBits="13" dataLength="170708"/>
+          <DOMSoundItem name="_Sounds/Drum_10.wav" itemID="57a4495f-00000388" linkageExportForAS="true" linkageClassName="io.voodoo.game.sounds.Drum10" sourceExternalFilepath="./LIBRARY/_Sounds/Drum_10.wav" sourceLastImported="1470383504" externalFileSize="340324" href="_Sounds/Drum_10.wav" soundDataHRef="M 7 1470383090.dat" format="44kHz 16bit Stereo" sampleCount="56700" exportFormat="5" exportBits="13" dataLength="226800"/>
+          <DOMSoundItem name="_Sounds/Drum_11.wav" itemID="57a4495f-00000389" linkageExportForAS="true" linkageClassName="io.voodoo.game.sounds.Drum11" sourceExternalFilepath="./LIBRARY/_Sounds/Drum_11.wav" sourceLastImported="1470383508" externalFileSize="77264" href="_Sounds/Drum_11.wav" soundDataHRef="M 8 1470383090.dat" format="44kHz 16bit Stereo" sampleCount="18292" exportFormat="5" exportBits="13" dataLength="73168"/>
+          <DOMSoundItem name="_Sounds/Drum_12.wav" itemID="57a4495f-0000038a" linkageExportForAS="true" linkageClassName="io.voodoo.game.sounds.Drum12" sourceExternalFilepath="./LIBRARY/_Sounds/Drum_12.wav" sourceLastImported="1470383514" externalFileSize="83970" href="_Sounds/Drum_12.wav" soundDataHRef="M 9 1470383090.dat" format="44kHz 16bit Stereo" sampleCount="20734" exportFormat="5" exportBits="13" dataLength="82936"/>
+          <DOMSoundItem name="_Sounds/Drum_Metalic.wav" itemID="57a4495f-0000038b" linkageExportForAS="true" linkageClassName="io.voodoo.game.sounds.FailSound" sourceExternalFilepath="./LIBRARY/_Sounds/Drum_Metalic.wav" sourceLastImported="1470383140" externalFileSize="106902" href="_Sounds/Drum_Metalic.wav" soundDataHRef="M 10 1470383090.dat" format="44kHz 16bit Mono" sampleCount="53429" dataLength="106858"/>
+          <DOMBitmapItem name="_Map1/_Graphics/game-assets-game-background-sidescroller.png" itemID="57a3c8db-000007bb" sourceExternalFilepath="./LIBRARY/_Map1/_Graphics/game-assets-game-background-sidescroller.png" sourceLastImported="1470350549" externalFileSize="31551" allowSmoothing="true" useImportedJPEGData="false" compressionType="lossless" originalCompressionType="lossless" quality="50" href="_Map1/_Graphics/game-assets-game-background-sidescroller.png" bitmapDataHRef="M 2 1470350769.dat" frameRight="16000" frameBottom="12000"/>
      </media>
      <symbols>
-          <Include href="_DrumBoxes/ActionsDrumsBox.xml" itemID="57a34ee2-00001111" lastModified="1470324368"/>
-          <Include href="_DrumBoxes/DetailsDrumsBox.xml" itemID="57a352c5-00001169" lastModified="1470324013"/>
-          <Include href="_DrumBoxes/TargetsDrumsBox.xml" itemID="57a35210-00001143" lastModified="1470324035"/>
+          <Include href="_DrumBoxes/ActionsDrumsBox.xml" itemID="57a34ee2-00001111" lastModified="1470352864"/>
+          <Include href="_DrumBoxes/DetailsDrumsBox.xml" itemID="57a352c5-00001169" lastModified="1470352875"/>
+          <Include href="_DrumBoxes/TargetsDrumsBox.xml" itemID="57a35210-00001143" lastModified="1470352880"/>
           <Include href="_Drums/_Graphics/DrumSprite.xml" loadImmediate="false" itemID="57a30a0a-0000056e" lastModified="1470303035"/>
           <Include href="_Drums/ActionDrumAttack.xml" itemID="57a313e6-000005fe" lastModified="1470322793"/>
           <Include href="_Drums/ActionDrumDefend.xml" itemID="57a30fbc-000005a6" lastModified="1470322798"/>
@@ -29,10 +46,12 @@
           <Include href="_DrumTabs/_Graphics/BlueTab.xml" loadImmediate="false" itemID="57a1fe5c-0000012b" lastModified="1470319631"/>
           <Include href="_DrumTabs/_Graphics/GreenTab.xml" loadImmediate="false" itemID="57a1ff90-00000136" lastModified="1470319647"/>
           <Include href="_DrumTabs/_Graphics/PurpleTab.xml" loadImmediate="false" itemID="57a200b7-00000142" lastModified="1470319643"/>
-          <Include href="_DrumTabs/ActionDrumTab.xml" itemIcon="0" itemID="57a1fd26-00000122" lastModified="1470234635"/>
+          <Include href="_DrumTabs/ActionDrumTab.xml" itemIcon="0" itemID="57a1fd26-00000122" lastModified="1470389576"/>
           <Include href="_DrumTabs/DetailDrumTab.xml" itemIcon="0" itemID="57a20061-00000140" lastModified="1470234938"/>
           <Include href="_DrumTabs/TargetDrumTab.xml" itemIcon="0" itemID="57a1ff20-00000134" lastModified="1470234649"/>
-          <Include href="GoDrumGameScene.xml" itemID="57a2012b-00000146" lastModified="1470327621"/>
+          <Include href="_Map1/_Graphics/game_background.ai.xml" itemIcon="1" loadImmediate="false" itemID="57a44c98-0000038e" lastModified="1470385326"/>
+          <Include href="_Map1/Map1.xml" itemID="57a3c490-0000076c" lastModified="1470390697"/>
+          <Include href="GoDrumGameScene.xml" itemID="57a2012b-00000146" lastModified="1470390664"/>
      </symbols>
      <timelines>
           <DOMTimeline name="Scene 1">
@@ -78,30 +97,39 @@
           </DOMTimeline>
      </timelines>
      <persistentData>
+          <PD n="com.air.artemis.ipadest" v="GameScene.ipa"/>
           <PD n="ane.tmp.unzipped.folder" v="C:\Users\Maxime\AppData\Local\Temp\Tmp_ANE_File_Unzipped_Packages"/>
-          <PD n="com.air.sdk.path"/>
+          <PD n="DebugMovieChecked" v="OnDevice"/>
+          <PD n="com.air.oldTargetPlatform" v="iOS"/>
+          <PD n="com.air.sdk.path" v="D:\SDK\4.13.0_AIR_15.0.0.349_BETA"/>
+          <PD n="com.air.artemis.pubipa" v="true"/>
+          <PD n="com.air.artemis.hostip" v="Connexion réseau sans fil &lt;192.168.0.30&gt;"/>
+          <PD n="com.air.artemis.ipacertpath" v="D:/GoDrum/Resources/Certificates/Certificats_MaximePhilipp.p12"/>
+          <PD n="flash.swf.basename" v="GameScene"/>
+          <PD n="swf.folder.path" v="D:/GoDrum/Resources/GameScene/"/>
+          <PD n="com.air.artemis.ipaprovision" v="D:/GoDrum/Resources/Certificates/Voodoo_Wildcard_Provisioning_Profile.mobileprovision"/>
      </persistentData>
      <PrinterSettings/>
      <publishHistory>
-          <PublishItem publishSize="606160" publishTime="1470348834" publishDebug="true"/>
-          <PublishItem publishSize="606126" publishTime="1470348797"/>
-          <PublishItem publishSize="606132" publishTime="1470348795" publishDebug="true"/>
-          <PublishItem publishSize="606156" publishTime="1470348741"/>
-          <PublishItem publishSize="606151" publishTime="1470348694"/>
-          <PublishItem publishSize="606156" publishTime="1470348692" publishDebug="true"/>
-          <PublishItem publishSize="606147" publishTime="1470348684" publishDebug="true"/>
-          <PublishItem publishSize="606146" publishTime="1470348675" publishDebug="true"/>
-          <PublishItem publishSize="606128" publishTime="1470348617"/>
-          <PublishItem publishSize="606127" publishTime="1470348612" publishDebug="true"/>
-          <PublishItem publishSize="18002" publishTime="1470348572" publishDebug="true"/>
-          <PublishItem publishSize="18002" publishTime="1470348499" publishDebug="true"/>
-          <PublishItem publishSize="18002" publishTime="1470348450" publishDebug="true"/>
-          <PublishItem publishSize="605887" publishTime="1470348385" publishDebug="true"/>
-          <PublishItem publishSize="605814" publishTime="1470348189"/>
-          <PublishItem publishSize="605814" publishTime="1470348176" publishDebug="true"/>
-          <PublishItem publishSize="605807" publishTime="1470348068"/>
-          <PublishItem publishSize="605806" publishTime="1470348060" publishDebug="true"/>
-          <PublishItem publishSize="605800" publishTime="1470348049" publishDebug="true"/>
-          <PublishItem publishSize="605772" publishTime="1470348025" publishDebug="true"/>
+          <PublishItem publishSize="736676" publishTime="1470391574" publishDebug="true"/>
+          <PublishItem publishSize="736745" publishTime="1470391523"/>
+          <PublishItem publishSize="736737" publishTime="1470391518" publishDebug="true"/>
+          <PublishItem publishSize="736757" publishTime="1470391478"/>
+          <PublishItem publishSize="736750" publishTime="1470391472" publishDebug="true"/>
+          <PublishItem publishSize="736762" publishTime="1470391468" publishDebug="true"/>
+          <PublishItem publishSize="736742" publishTime="1470391454" publishDebug="true"/>
+          <PublishItem publishSize="736735" publishTime="1470391417"/>
+          <PublishItem publishSize="736736" publishTime="1470391413" publishDebug="true"/>
+          <PublishItem publishSize="736742" publishTime="1470391407" publishDebug="true"/>
+          <PublishItem publishSize="736797" publishTime="1470391367"/>
+          <PublishItem publishSize="736808" publishTime="1470391363" publishDebug="true"/>
+          <PublishItem publishSize="736787" publishTime="1470391340" publishDebug="true"/>
+          <PublishItem publishSize="736749" publishTime="1470391314" publishDebug="true"/>
+          <PublishItem publishSize="146043" publishTime="1470391303" publishDebug="true"/>
+          <PublishItem publishSize="736736" publishTime="1470391273"/>
+          <PublishItem publishSize="736727" publishTime="1470391257" publishDebug="true"/>
+          <PublishItem publishSize="736745" publishTime="1470391250" publishDebug="true"/>
+          <PublishItem publishSize="736739" publishTime="1470391228"/>
+          <PublishItem publishSize="736743" publishTime="1470391223" publishDebug="true"/>
      </publishHistory>
 </DOMDocument>

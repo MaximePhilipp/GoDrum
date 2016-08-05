@@ -4,6 +4,7 @@
 	import flash.display.MovieClip;
 	import flash.display.Sprite;
 	import flash.events.MouseEvent;
+	import flash.events.TouchEvent;
 	import flash.media.Sound;
 	import flash.ui.Mouse;
 	import flash.utils.getTimer;
@@ -30,15 +31,11 @@
 		public function get subType():String {
 			return this._subType;
 		}
-		protected var sound:Sound;
-		private var _drumHandler:DrumHandler;
-		private function set drumHandler(value:DrumHandler):void {
-			this._drumHandler = value;
-			Log.info(TAG, "New value is " + value);
+		protected var _soundClass:Class;
+		public function get soundClass():Class {
+			return this._soundClass;
 		}
-		private function get drumHandler():DrumHandler {
-			return _drumHandler;
-		}
+		private var drumHandler:DrumHandler;
 		private var cm:CruftManager;
 		private var soundCM:CruftManager;
 		
@@ -48,9 +45,9 @@
 			this.cm = new CruftManager();
 			this.soundCM = new CruftManager();
 			
-			cm.addListener(this, MouseEvent.MOUSE_DOWN, onDrumTapped);
-			cm.addListener(this, MouseEvent.MOUSE_UP, onDrumReleased);
-			cm.addListener(this, MouseEvent.RELEASE_OUTSIDE, onDrumReleased);
+			cm.addListener(this, TouchEvent.TOUCH_BEGIN, onDrumTapped);
+			cm.addListener(this, TouchEvent.TOUCH_END, onDrumReleased);
+			cm.addListener(this, TouchEvent.TOUCH_OUT, onDrumReleased);
 			
 			gotoAndStop(0);
 		}
@@ -60,15 +57,15 @@
 			Log.info(TAG, "Drum " + type + " " + subType + " initialized.");
 		}
 		
-		protected function onDrumTapped(event:MouseEvent):void {
+		public function onDrumTapped(event:TouchEvent):void {
 			Log.info(TAG, "Drum " + type + " tapped with subtype " + subType + " ...");
-			//this.soundCM.playSound(sound);
+			this.soundCM.playSound(new _soundClass());
 			gotoAndStop("down");
 			
-			drumHandler.registerDrum(subType, getTimer());
+			drumHandler.registerDrum(this, getTimer());
 		}
 		
-		protected function onDrumReleased(event:MouseEvent):void {
+		public function onDrumReleased(event:TouchEvent):void {
 			gotoAndStop("up");
 		}
 		

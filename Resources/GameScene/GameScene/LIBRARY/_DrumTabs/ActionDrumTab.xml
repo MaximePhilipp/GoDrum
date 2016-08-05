@@ -1,6 +1,6 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_DrumTabs/ActionDrumTab" itemID="57a1fd26-00000122" linkageExportForAS="true" linkageClassName="io.voodoo.game.display.ActionDrumTab" symbolType="button" lastModified="1470234635">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_DrumTabs/ActionDrumTab" itemID="57a1fd26-00000122" linkageExportForAS="true" linkageClassName="io.voodoo.game.display.ActionDrumTab" symbolType="button" lastModified="1470389576">
   <timeline>
-    <DOMTimeline name="ActionDrumTab" currentFrame="2">
+    <DOMTimeline name="ActionDrumTab">
       <layers>
         <DOMLayer name="Layer 1" color="#4F80FF" current="true" isSelected="true">
           <frames>

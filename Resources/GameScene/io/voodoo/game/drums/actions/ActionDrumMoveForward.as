@@ -4,6 +4,7 @@ package io.voodoo.game.drums.actions {
 	
 	import io.voodoo.game.DrumHandler;
 	import io.voodoo.game.drums.ActionDrum;
+	import io.voodoo.game.sounds.Drum05;
 	
 	
 	/**
@@ -15,8 +16,7 @@ package io.voodoo.game.drums.actions {
 		public function ActionDrumMoveForward() {
 			super();
 			this._subType = ActionDrum.MOVE_FORWARD;
-			// TODO
-			this.sound = sound;
+			this._soundClass = Drum05;
 		}
 	}
 }

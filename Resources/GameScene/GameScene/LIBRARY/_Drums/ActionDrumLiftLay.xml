@@ -27,7 +27,7 @@
                     </StrokeStyle>
                   </strokes>
                   <edges>
-                    <Edge strokeStyle="1" edges="!-512 -259|-13 -693!-13 585|-13 -693!-13 -693|413 -218"/>
+                    <Edge strokeStyle="1" edges="!-512 -259|-13 -693!-13 -693|413 -218!-13 585|-13 -693"/>
                   </edges>
                 </DOMShape>
               </elements>
@@ -45,7 +45,7 @@
                     </StrokeStyle>
                   </strokes>
                   <edges>
-                    <Edge strokeStyle="1" edges="!-577 -291|-15 -780!-15 660|-15 -780!-15 -780|465 -244"/>
+                    <Edge strokeStyle="1" edges="!-577 -291|-15 -780!-15 -780|465 -244!-15 660|-15 -780"/>
                   </edges>
                 </DOMShape>
               </elements>

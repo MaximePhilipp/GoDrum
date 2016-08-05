@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_DrumBoxes/TargetsDrumsBox" itemID="57a35210-00001143" linkageExportForAS="true" linkageBaseClass="flash.display.Sprite" linkageClassName="io.voodoo.game.display.drumboxes.TargetsDrumsBox" lastModified="1470324035" isSpriteSubclass="true">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_DrumBoxes/TargetsDrumsBox" itemID="57a35210-00001143" linkageExportForAS="true" linkageBaseClass="flash.display.Sprite" linkageClassName="io.voodoo.game.display.drumboxes.TargetsDrumsBox" lastModified="1470352880" isSpriteSubclass="true">
   <timeline>
     <DOMTimeline name="TargetsDrumsBox">
       <layers>
@@ -6,7 +6,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_DrumTabs/_Graphics/GreenTab">
+                <DOMSymbolInstance libraryItemName="_DrumTabs/_Graphics/GreenTab" selected="true">
                   <matrix>
                     <Matrix a="1.25" d="3" tx="50"/>
                   </matrix>
@@ -14,7 +14,7 @@
                     <Point y="-0.05"/>
                   </transformationPoint>
                   <color>
-                    <Color alphaMultiplier="0.6015625"/>
+                    <Color alphaMultiplier="0.69921875"/>
                   </color>
                 </DOMSymbolInstance>
                 <DOMSymbolInstance libraryItemName="_Drums/TargetDrumItself" name="itselfDrum">
@@ -25,7 +25,7 @@
                     <Point/>
                   </transformationPoint>
                 </DOMSymbolInstance>
-                <DOMSymbolInstance libraryItemName="_Drums/TargetDrumItem" name="itemDrum" selected="true">
+                <DOMSymbolInstance libraryItemName="_Drums/TargetDrumItem" name="itemDrum">
                   <matrix>
                     <Matrix a="0.617279052734375" d="0.617279052734375" tx="50"/>
                   </matrix>

@@ -27,7 +27,7 @@
                     </StrokeStyle>
                   </strokes>
                   <edges>
-                    <Edge strokeStyle="1" edges="!155 -516|589 -17!-689 -17|589 -17!589 -17|114 409"/>
+                    <Edge strokeStyle="1" edges="!155 -516|589 -17!589 -17|114 409!-689 -17|589 -17"/>
                   </edges>
                 </DOMShape>
               </elements>
@@ -70,7 +70,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Drums/_Graphics/DrumSprite">
                   <matrix>
-                    <Matrix a="1.12654113769531" d="1.12654113769531"/>
+                    <Matrix a="1.12652587890625" d="1.12652587890625"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>

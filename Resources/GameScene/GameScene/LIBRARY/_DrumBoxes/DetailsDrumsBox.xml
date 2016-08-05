@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_DrumBoxes/DetailsDrumsBox" itemID="57a352c5-00001169" linkageExportForAS="true" linkageBaseClass="flash.display.Sprite" linkageClassName="io.voodoo.game.display.drumboxes.DetailsDrumsBox" lastModified="1470324013" isSpriteSubclass="true">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_DrumBoxes/DetailsDrumsBox" itemID="57a352c5-00001169" linkageExportForAS="true" linkageBaseClass="flash.display.Sprite" linkageClassName="io.voodoo.game.display.drumboxes.DetailsDrumsBox" lastModified="1470352875" isSpriteSubclass="true">
   <timeline>
     <DOMTimeline name="DetailsDrumsBox">
       <layers>
@@ -14,7 +14,7 @@
                     <Point y="-0.05"/>
                   </transformationPoint>
                   <color>
-                    <Color alphaMultiplier="0.6015625"/>
+                    <Color alphaMultiplier="0.69921875"/>
                   </color>
                 </DOMSymbolInstance>
                 <DOMSymbolInstance libraryItemName="_Drums/DetailDrumBig" name="bigDrum">
@@ -25,7 +25,7 @@
                     <Point/>
                   </transformationPoint>
                 </DOMSymbolInstance>
-                <DOMSymbolInstance libraryItemName="_Drums/DetailDrumFast" name="fastDrum" selected="true">
+                <DOMSymbolInstance libraryItemName="_Drums/DetailDrumFast" name="fastDrum">
                   <matrix>
                     <Matrix a="0.617279052734375" d="0.617279052734375" tx="50" ty="141.3"/>
                   </matrix>

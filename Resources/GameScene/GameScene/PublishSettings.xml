@@ -42,7 +42,7 @@
     <AlternateFilename>GameScene_alternate.html</AlternateFilename>
     <UsingOwnAlternateFile>0</UsingOwnAlternateFile>
     <OwnAlternateFilename></OwnAlternateFilename>
-    <Width>1200</Width>
+    <Width>1024</Width>
     <Height>768</Height>
     <Align>0</Align>
     <Units>0</Units>
@@ -72,8 +72,8 @@
     <EventFormat>0</EventFormat>
     <EventCompress>7</EventCompress>
     <OverrideSounds>0</OverrideSounds>
-    <Version>19</Version>
-    <ExternalPlayer>AdobeAIR3_8</ExternalPlayer>
+    <Version>26</Version>
+    <ExternalPlayer>PFI_15.0.0.349</ExternalPlayer>
     <ActionScriptVersion>3</ActionScriptVersion>
     <PackageExportFrame>1</PackageExportFrame>
     <PackagePaths></PackagePaths>
@@ -83,7 +83,7 @@
     <DebuggingPassword></DebuggingPassword>
     <CompressMovie>1</CompressMovie>
     <CompressionType>0</CompressionType>
-    <InvisibleLayer>1</InvisibleLayer>
+    <InvisibleLayer>0</InvisibleLayer>
     <DeviceSound>0</DeviceSound>
     <StreamUse8kSampleRate>0</StreamUse8kSampleRate>
     <EventUse8kSampleRate>0</EventUse8kSampleRate>
@@ -123,7 +123,7 @@
     <TelemetryPassword></TelemetryPassword>
   </PublishFlashProperties>
   <PublishJpegProperties enabled="true">
-    <Width>1200</Width>
+    <Width>1024</Width>
     <Height>768</Height>
     <Progressive>0</Progressive>
     <DPI>4718592</DPI>
@@ -149,12 +149,12 @@
     <exportSMIL>1</exportSMIL>
   </PublishRNWKProperties>
   <PublishGifProperties enabled="true">
-    <Width>1200</Width>
+    <Width>1024</Width>
     <Height>768</Height>
     <Animated>0</Animated>
     <MatchMovieDim>1</MatchMovieDim>
     <Loop>1</Loop>
-    <LoopCount></LoopCount>
+    <LoopCount>0</LoopCount>
     <Smooth>1</Smooth>
     <MaxColors>255</MaxColors>
   </PublishGifProperties>
@@ -208,7 +208,7 @@
     <AlternateFilename>GameScene_alternate.html</AlternateFilename>
     <UsingOwnAlternateFile>0</UsingOwnAlternateFile>
     <OwnAlternateFilename></OwnAlternateFilename>
-    <Width>1200</Width>
+    <Width>1024</Width>
     <Height>768</Height>
     <Align>0</Align>
     <Units>0</Units>
@@ -238,8 +238,8 @@
     <EventFormat>0</EventFormat>
     <EventCompress>7</EventCompress>
     <OverrideSounds>0</OverrideSounds>
-    <Version>19</Version>
-    <ExternalPlayer>AdobeAIR3_8</ExternalPlayer>
+    <Version>26</Version>
+    <ExternalPlayer>PFI_15.0.0.349</ExternalPlayer>
     <ActionScriptVersion>3</ActionScriptVersion>
     <PackageExportFrame>1</PackageExportFrame>
     <PackagePaths></PackagePaths>
@@ -249,7 +249,7 @@
     <DebuggingPassword></DebuggingPassword>
     <CompressMovie>1</CompressMovie>
     <CompressionType>0</CompressionType>
-    <InvisibleLayer>1</InvisibleLayer>
+    <InvisibleLayer>0</InvisibleLayer>
     <DeviceSound>0</DeviceSound>
     <StreamUse8kSampleRate>0</StreamUse8kSampleRate>
     <EventUse8kSampleRate>0</EventUse8kSampleRate>
@@ -289,7 +289,7 @@
     <TelemetryPassword></TelemetryPassword>
   </PublishFlashProperties>
   <PublishJpegProperties enabled="true">
-    <Width>1200</Width>
+    <Width>1024</Width>
     <Height>768</Height>
     <Progressive>0</Progressive>
     <DPI>4718592</DPI>
@@ -315,12 +315,12 @@
     <exportSMIL>1</exportSMIL>
   </PublishRNWKProperties>
   <PublishGifProperties enabled="true">
-    <Width>1200</Width>
+    <Width>1024</Width>
     <Height>768</Height>
     <Animated>0</Animated>
     <MatchMovieDim>1</MatchMovieDim>
     <Loop>1</Loop>
-    <LoopCount></LoopCount>
+    <LoopCount>0</LoopCount>
     <Smooth>1</Smooth>
     <MaxColors>255</MaxColors>
   </PublishGifProperties>
