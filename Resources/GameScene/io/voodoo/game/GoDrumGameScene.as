@@ -3,6 +3,8 @@ package io.voodoo.game {
 	import com.deboutludo.core.Sequence;
 	import com.deboutludo.display.Display;
 	import com.deboutludo.events.AppEvent;
+	import com.deboutludo.utils.randRange;
+	import com.deboutludo.utils.randRangeNum;
 	import com.greensock.TweenLite;
 	import com.greensock.TweenMax;
 	import com.greensock.easing.Power2;
@@ -20,6 +22,7 @@ package io.voodoo.game {
 	import flash.ui.MultitouchInputMode;
 	import flash.utils.getTimer;
 	
+	import io.voodoo.game.characters.Character;
 	import io.voodoo.game.display.drumboxes.ActionsDrumsBox;
 	import io.voodoo.game.display.drumboxes.DetailsDrumsBox;
 	import io.voodoo.game.display.drumboxes.TargetsDrumsBox;
@@ -85,10 +88,12 @@ package io.voodoo.game {
 			updateAvailableDrums();
 		}
 		private var drums:Vector.<Drum>;
+		private var characters:Vector.<Character>;
 		
 		private var actionDrumsTabActivated:Boolean;
 		private var targetDrumsTabActivated:Boolean;
 		private var detailDrumsTabActivated:Boolean;
+		private var isGoingForward:Boolean;
 		
 		public static function get instance():GoDrumGameScene {
 			return _instance;
@@ -108,6 +113,7 @@ package io.voodoo.game {
 		public function GoDrumGameScene() {
 			super();
 			_instance = this;
+			isGoingForward = true;
 		}
 		
 		
@@ -135,6 +141,16 @@ package io.voodoo.game {
 			
 			generateDrums();
 			
+			// Creating the characters
+			this.characters = new Vector.<Character>();
+			var character:Character;
+			var i:int, n:int = 3;
+			for(i = 0 ; i < n ; i++) {
+				character = new Character();
+				character.scaleX = character.scaleY = randRangeNum(0.35, 0.45);
+				characters.push(character);
+			}
+			
 			super.onPrepare();
 		}
 		
@@ -152,6 +168,15 @@ package io.voodoo.game {
 			
 			this.map = new Map1();
 			this.addChildAt(this.map, 0);
+			
+			var i:int, n:int = characters.length;
+			for(i = 0 ; i < n ; i++) {
+				characters[i].x = (-100 + (100*i)) + (characters[i].width / characters[i].scaleX) + 40;
+				characters[i].y = randRange(-30,30) + (characters[i].height / characters[i].scaleY) + 100;
+				this.addChild(characters[i]);
+				characters[i].breathe();
+			}
+			
 			
 			super.onShow(parent, index);
 		}
@@ -247,13 +272,42 @@ package io.voodoo.game {
 		
 		// COMMANDS :
 		private function onMoveForward():void {
-			// TODO make the characters walk.
-			map.moveForward();
+			if(!isGoingForward) {
+				for each(var character:Character in characters) {
+					TweenLite.to(character, 0.1, {scaleX:-scaleX, onComplete:moveForward});
+				}
+			}
+			else
+				moveForward();
 		}
 		
+		private function moveForward():void {
+			for each(var character:Character in characters) {
+				character.walk();
+				TweenLite.delayedCall(Map1.MOVE_DURATION, character.breathe);
+			}
+			map.moveForward();
+			isGoingForward = true;
+		}
+		
+		
 		private function onMoveBackwards():void {
-			// TODO make the characters walk backwards.
+			if(isGoingForward) {
+				for each(var character:Character in characters) {
+					TweenLite.to(character, 0.1, {scaleX:-scaleX, onComplete:moveBackwards});
+				}
+			}
+			else
+				moveBackwards();
+		}
+		
+		private function moveBackwards():void {
+			for each(var character:Character in characters) {
+				character.walk();
+				TweenLite.delayedCall(Map1.MOVE_DURATION, character.breathe);
+			}
 			map.moveBackwards();
+			isGoingForward = false;
 		}
 		
 		private function onAttack():void {

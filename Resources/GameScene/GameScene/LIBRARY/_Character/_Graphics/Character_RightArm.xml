@@ -1,0 +1,31 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Character/_Graphics/Character_RightArm" itemID="57a4903d-000013b9" lastModified="1470402621">
+  <timeline>
+    <DOMTimeline name="Character_RightArm">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4F80FF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <strokes>
+                    <StrokeStyle index="1">
+                      <SolidStroke scaleMode="normal" weight="20" sharpCorners="true">
+                        <fill>
+                          <SolidColor/>
+                        </fill>
+                      </SolidStroke>
+                    </StrokeStyle>
+                  </strokes>
+                  <edges>
+                    <Edge strokeStyle="1" edges="!-344 -910S4[-103 -809 83 -636!83 -636[680 -84 509 977!-547 -976|-344 -910"/>
+                    <Edge cubics="!-547 -976(-547,-976;-547,-976 782,-721 509,977q-547 -976Q-547 -976q-344 -910Q-103 -809q83 -636Q680 -84q509 977)236,2675;"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

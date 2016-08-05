@@ -12,7 +12,7 @@ package io.voodoo.game.maps {
 		
 		// CONSTANTS :
 		private static const MOVE_STEP:Number = 300;
-		private static const MOVE_DURATION:Number = 3;
+		public static const MOVE_DURATION:Number = 3;
 		
 		// PROPERTIES :
 		private var _currentGroundYPosition:Number;

@@ -1,0 +1,52 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Character/_Graphics/Character_eyesDetails" itemID="57a48fec-000013a1" lastModified="1470402541">
+  <timeline>
+    <DOMTimeline name="Character_eyesDetails">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4F80FF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <strokes>
+                    <StrokeStyle index="1">
+                      <SolidStroke scaleMode="normal" sharpCorners="true">
+                        <fill>
+                          <SolidColor color="#FFFFFF"/>
+                        </fill>
+                      </SolidStroke>
+                    </StrokeStyle>
+                  </strokes>
+                  <edges>
+                    <Edge fillStyle1="1" strokeStyle="1" edges="!860 17S6[860 52 835 77!835 77[810 102 775 102!775 102[740 102 715 77!715 77[690 52 690 17!690 17[690 -18 715 -43!715 -43[740 -68 775 -68!775 -68[810 -68 835 -43!835 -43[860 -18 860 17!-689 -17[-689 18 -714 43!-714 43[-739 68 -774 68
+!-774 68[-809 68 -834 43!-834 43[-859 18 -859 -17!-859 -17[-859 -52 -834 -77!-834 -77[-809 -102 -774 -102!-774 -102[-739 -102 -714 -77!-714 -77[-689 -52 -689 -17"/>
+                    <Edge cubics="!860 17(860,17;860,40 852,60 835,77q860 17Q860 52q835 77)835,77;"/>
+                    <Edge cubics="!835 77(;818,94 798,102 775,102q835 77Q810 102q775 102);"/>
+                    <Edge cubics="!775 102(;752,102 732,94 715,77q775 102Q740 102q715 77);"/>
+                    <Edge cubics="!715 77(715,77;698,60 690,40 690,17q715 77Q690 52q690 17)690,17;"/>
+                    <Edge cubics="!690 17(;690,-6 698,-26 715,-43q690 17Q690 -18q715 -43);"/>
+                    <Edge cubics="!715 -43(715,-43;732,-60 752,-68 775,-68q715 -43Q740 -68q775 -68);"/>
+                    <Edge cubics="!775 -68(;798,-68 818,-60 835,-43q775 -68Q810 -68q835 -43);"/>
+                    <Edge cubics="!835 -43(;852,-26 860,-6 860,17q835 -43Q860 -18q860 17);"/>
+                    <Edge cubics="!-689 -17(;-689,6 -697,26 -714,43q-689 -17Q-689 18q-714 43);"/>
+                    <Edge cubics="!-714 43(-714,43;-731,60 -751,68 -774,68q-714 43Q-739 68q-774 68)-774,68;"/>
+                    <Edge cubics="!-774 68(-774,68;-797,68 -817,60 -834,43q-774 68Q-809 68q-834 43);"/>
+                    <Edge cubics="!-834 43(-834,43;-851,26 -859,6 -859,-17q-834 43Q-859 18q-859 -17)-859,-17;"/>
+                    <Edge cubics="!-859 -17(;-859,-40 -851,-60 -834,-77q-859 -17Q-859 -52q-834 -77);"/>
+                    <Edge cubics="!-834 -77(-834,-77;-817,-94 -797,-102 -774,-102q-834 -77Q-809 -102q-774 -102);"/>
+                    <Edge cubics="!-774 -102(;-751,-102 -731,-94 -714,-77q-774 -102Q-739 -102q-714 -77);"/>
+                    <Edge cubics="!-714 -77(;-697,-60 -689,-40 -689,-17q-714 -77Q-689 -52q-689 -17);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

@@ -1,5 +1,7 @@
 <DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" backgroundColor="#999999" width="1024" height="768" frameRate="30" currentTimeline="1" xflVersion="2.4" creatorInfo="Adobe Flash Professional CC" platform="Windows" versionInfo="Saved by Adobe Flash Windows 13.1 build 226" majorVersion="13" minorVersion="1" buildNumber="226" rulerVisible="true" vanishingPoint3DX="512" vanishingPoint3DY="384" nextSceneIdentifier="2" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false" filetypeGUID="DD0DDBBF-5BEF-45B2-9F24-A3048D2A676F">
      <folders>
+          <DOMFolderItem name="_Character" itemID="57a46bce-0000129f" isExpanded="true"/>
+          <DOMFolderItem name="_Character/_Graphics" itemID="57a46bd9-000012a4" isExpanded="true"/>
           <DOMFolderItem name="_DrumBoxes" itemID="57a35d55-00001478" isExpanded="true"/>
           <DOMFolderItem name="_Drums" itemID="57a309d0-00000568" isExpanded="true"/>
           <DOMFolderItem name="_Drums/_Graphics" itemID="57a309d8-0000056c" isExpanded="true"/>
@@ -28,6 +30,16 @@
           <DOMBitmapItem name="_Map1/_Graphics/game-assets-game-background-sidescroller.png" itemID="57a3c8db-000007bb" sourceExternalFilepath="./LIBRARY/_Map1/_Graphics/game-assets-game-background-sidescroller.png" sourceLastImported="1470350549" externalFileSize="31551" allowSmoothing="true" useImportedJPEGData="false" compressionType="lossless" originalCompressionType="lossless" quality="50" href="_Map1/_Graphics/game-assets-game-background-sidescroller.png" bitmapDataHRef="M 2 1470350769.dat" frameRight="16000" frameBottom="12000"/>
      </media>
      <symbols>
+          <Include href="_Character/_Graphics/Character_Body.xml" loadImmediate="false" itemID="57a49031-000013b5" lastModified="1470402609"/>
+          <Include href="_Character/_Graphics/Character_eyesBlack.xml" loadImmediate="false" itemID="57a48ffa-000013a5" lastModified="1470402554"/>
+          <Include href="_Character/_Graphics/Character_eyesDetails.xml" loadImmediate="false" itemID="57a48fec-000013a1" lastModified="1470402541"/>
+          <Include href="_Character/_Graphics/Character_eyesWhite.xml" loadImmediate="false" itemID="57a4900a-000013a9" lastModified="1470402570"/>
+          <Include href="_Character/_Graphics/Character_LeftArm.xml" loadImmediate="false" itemID="57a48fb6-0000139d" lastModified="1470402486"/>
+          <Include href="_Character/_Graphics/Character_leftLeg.xml" loadImmediate="false" itemID="57a49017-000013ad" lastModified="1470402583"/>
+          <Include href="_Character/_Graphics/Character_rghtLeg.xml" loadImmediate="false" itemID="57a49023-000013b1" lastModified="1470402595"/>
+          <Include href="_Character/_Graphics/Character_RightArm.xml" loadImmediate="false" itemID="57a4903d-000013b9" lastModified="1470402621"/>
+          <Include href="_Character/_Graphics/CharacterSprite.xml" itemID="57a46bed-000012a6" lastModified="1470406739"/>
+          <Include href="_Character/_Graphics/Characthair.xml" loadImmediate="false" itemID="57a48f81-00001398" lastModified="1470402433"/>
           <Include href="_DrumBoxes/ActionsDrumsBox.xml" itemID="57a34ee2-00001111" lastModified="1470352864"/>
           <Include href="_DrumBoxes/DetailsDrumsBox.xml" itemID="57a352c5-00001169" lastModified="1470352875"/>
           <Include href="_DrumBoxes/TargetsDrumsBox.xml" itemID="57a35210-00001143" lastModified="1470352880"/>
@@ -50,8 +62,8 @@
           <Include href="_DrumTabs/DetailDrumTab.xml" itemIcon="0" itemID="57a20061-00000140" lastModified="1470234938"/>
           <Include href="_DrumTabs/TargetDrumTab.xml" itemIcon="0" itemID="57a1ff20-00000134" lastModified="1470234649"/>
           <Include href="_Map1/_Graphics/game_background.ai.xml" itemIcon="1" loadImmediate="false" itemID="57a44c98-0000038e" lastModified="1470385326"/>
-          <Include href="_Map1/Map1.xml" itemID="57a3c490-0000076c" lastModified="1470390697"/>
-          <Include href="GoDrumGameScene.xml" itemID="57a2012b-00000146" lastModified="1470390664"/>
+          <Include href="_Map1/Map1.xml" itemID="57a3c490-0000076c" lastModified="1470393036"/>
+          <Include href="GoDrumGameScene.xml" itemID="57a2012b-00000146" lastModified="1470406679"/>
      </symbols>
      <timelines>
           <DOMTimeline name="Scene 1">
@@ -98,38 +110,46 @@
      </timelines>
      <persistentData>
           <PD n="com.air.artemis.ipadest" v="GameScene.ipa"/>
+          <PD n="com.air.artemis.ipaopt" v="test"/>
           <PD n="ane.tmp.unzipped.folder" v="C:\Users\Maxime\AppData\Local\Temp\Tmp_ANE_File_Unzipped_Packages"/>
-          <PD n="DebugMovieChecked" v="OnDevice"/>
           <PD n="com.air.oldTargetPlatform" v="iOS"/>
+          <PD n="com.air.artemis.included.count" v="5"/>
+          <PD n="DebugMovieChecked" v="OnDevice"/>
           <PD n="com.air.sdk.path" v="D:\SDK\4.13.0_AIR_15.0.0.349_BETA"/>
+          <PD n="com.air.artemis.included.item0" v="D:/GoDrum/Resources/LaunchImages/Default.png"/>
           <PD n="com.air.artemis.pubipa" v="true"/>
+          <PD n="com.air.artemis.included.item1" v="D:/GoDrum/Resources/LaunchImages/Default@2x.png"/>
           <PD n="com.air.artemis.hostip" v="Connexion réseau sans fil &lt;192.168.0.30&gt;"/>
           <PD n="com.air.artemis.ipacertpath" v="D:/GoDrum/Resources/Certificates/Certificats_MaximePhilipp.p12"/>
+          <PD n="com.air.artemis.included.item2" v="D:/GoDrum/Resources/LaunchImages/Default-568h@2x.png"/>
+          <PD n="com.air.artemis.included.item3" v="D:/GoDrum/Resources/LaunchImages/Default-667h@2x.png"/>
           <PD n="flash.swf.basename" v="GameScene"/>
+          <PD n="com.air.artemis.included.item4" v="D:/GoDrum/Resources/LaunchImages/Default-736h@3x.png"/>
+          <PD n="flash.fla.filepath" v="D:/GoDrum/Resources/GameScene/GameScene/GameScene.xfl"/>
           <PD n="swf.folder.path" v="D:/GoDrum/Resources/GameScene/"/>
           <PD n="com.air.artemis.ipaprovision" v="D:/GoDrum/Resources/Certificates/Voodoo_Wildcard_Provisioning_Profile.mobileprovision"/>
      </persistentData>
      <PrinterSettings/>
      <publishHistory>
-          <PublishItem publishSize="736676" publishTime="1470391574" publishDebug="true"/>
-          <PublishItem publishSize="736745" publishTime="1470391523"/>
-          <PublishItem publishSize="736737" publishTime="1470391518" publishDebug="true"/>
-          <PublishItem publishSize="736757" publishTime="1470391478"/>
-          <PublishItem publishSize="736750" publishTime="1470391472" publishDebug="true"/>
-          <PublishItem publishSize="736762" publishTime="1470391468" publishDebug="true"/>
-          <PublishItem publishSize="736742" publishTime="1470391454" publishDebug="true"/>
-          <PublishItem publishSize="736735" publishTime="1470391417"/>
-          <PublishItem publishSize="736736" publishTime="1470391413" publishDebug="true"/>
-          <PublishItem publishSize="736742" publishTime="1470391407" publishDebug="true"/>
-          <PublishItem publishSize="736797" publishTime="1470391367"/>
-          <PublishItem publishSize="736808" publishTime="1470391363" publishDebug="true"/>
-          <PublishItem publishSize="736787" publishTime="1470391340" publishDebug="true"/>
-          <PublishItem publishSize="736749" publishTime="1470391314" publishDebug="true"/>
-          <PublishItem publishSize="146043" publishTime="1470391303" publishDebug="true"/>
-          <PublishItem publishSize="736736" publishTime="1470391273"/>
-          <PublishItem publishSize="736727" publishTime="1470391257" publishDebug="true"/>
-          <PublishItem publishSize="736745" publishTime="1470391250" publishDebug="true"/>
-          <PublishItem publishSize="736739" publishTime="1470391228"/>
-          <PublishItem publishSize="736743" publishTime="1470391223" publishDebug="true"/>
+          <PublishItem publishSize="742314" publishTime="1470407216" publishDebug="true"/>
+          <PublishItem publishSize="742279" publishTime="1470407137" publishDebug="true"/>
+          <PublishItem publishSize="742154" publishTime="1470406980" publishDebug="true"/>
+          <PublishItem publishSize="742148" publishTime="1470406958" publishDebug="true"/>
+          <PublishItem publishSize="742157" publishTime="1470406950" publishDebug="true"/>
+          <PublishItem publishSize="742139" publishTime="1470406929" publishDebug="true"/>
+          <PublishItem publishSize="742071" publishTime="1470406911" publishDebug="true"/>
+          <PublishItem publishSize="742065" publishTime="1470406830"/>
+          <PublishItem publishSize="742072" publishTime="1470406827" publishDebug="true"/>
+          <PublishItem publishSize="742085" publishTime="1470406745"/>
+          <PublishItem publishSize="742429" publishTime="1470406706"/>
+          <PublishItem publishSize="741782" publishTime="1470406665"/>
+          <PublishItem publishSize="741786" publishTime="1470406655"/>
+          <PublishItem publishSize="741789" publishTime="1470406642"/>
+          <PublishItem publishSize="741788" publishTime="1470406638" publishDebug="true"/>
+          <PublishItem publishSize="741795" publishTime="1470406628"/>
+          <PublishItem publishSize="741784" publishTime="1470406624" publishDebug="true"/>
+          <PublishItem publishSize="741776" publishTime="1470406605"/>
+          <PublishItem publishSize="741782" publishTime="1470406591"/>
+          <PublishItem publishSize="741782" publishTime="1470406588" publishDebug="true"/>
      </publishHistory>
 </DOMDocument>

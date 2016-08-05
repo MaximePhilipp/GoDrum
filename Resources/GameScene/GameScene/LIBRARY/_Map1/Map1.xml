@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Map1/Map1" itemID="57a3c490-0000076c" linkageExportForAS="true" linkageBaseClass="flash.display.Sprite" linkageClassName="io.voodoo.game.maps.Map1" lastModified="1470390697" isSpriteSubclass="true">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Map1/Map1" itemID="57a3c490-0000076c" linkageExportForAS="true" linkageBaseClass="flash.display.Sprite" linkageClassName="io.voodoo.game.maps.Map1" lastModified="1470393036" isSpriteSubclass="true">
   <timeline>
     <DOMTimeline name="Map1" guides='&lt;guidelines&gt;&lt;guideline direction="h"&gt;-193&lt;/guideline&gt;&lt;/guidelines&gt;'>
       <layers>

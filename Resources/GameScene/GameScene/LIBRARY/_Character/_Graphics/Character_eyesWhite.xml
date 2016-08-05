@@ -1,0 +1,36 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Character/_Graphics/Character_eyesWhite" itemID="57a4900a-000013a9" lastModified="1470402570">
+  <timeline>
+    <DOMTimeline name="Character_eyesWhite">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4F80FF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <strokes>
+                    <StrokeStyle index="1">
+                      <SolidStroke scaleMode="normal" sharpCorners="true">
+                        <fill>
+                          <SolidColor color="#515151"/>
+                        </fill>
+                      </SolidStroke>
+                    </StrokeStyle>
+                  </strokes>
+                  <edges>
+                    <Edge fillStyle1="1" strokeStyle="1" edges="!1311 27S6[1311 240 1160 391!1160 391[1010 542 796 542!796 542[583 542 432 391!432 391[282 240 282 27!282 27[282 -186 432 -337!432 -337[583 -488 796 -488!796 -488[1010 -488 1160 -337!1160 -337[1311 -186 1311 27!-11 0[-11 269 -202 459
+!-202 459[-392 650 -661 650!-661 650[-930 650 -1121 459!-1121 459[-1311 269 -1311 0!-1311 0[-1311 -269 -1121 -460!-1121 -460[-930 -650 -661 -650!-661 -650[-392 -650 -202 -460!-202 -460[-11 -269 -11 0"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

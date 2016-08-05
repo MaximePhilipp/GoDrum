@@ -1,0 +1,27 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Character/_Graphics/Character_eyesBlack" itemID="57a48ffa-000013a5" lastModified="1470402554">
+  <timeline>
+    <DOMTimeline name="Character_eyesBlack">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4F80FF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!1137 2S2[1137 159 1026 271!1026 271[914 383 756 383!756 383[599 383 487 271!487 271[375 159 375 2!375 2[375 -156 487 -268!487 -268[599 -379 756 -379!756 -379[914 -379 1026 -268!1026 -268[1137 -156 1137 2!-228 0[-228 188 -361 321!-361
+ 321[-494 454 -682 454!-682 454[-870 454 -1003 321!-1003 321[-1136 188 -1136 0!-1136 0[-1136 -188 -1003 -321!-1003 -321[-870 -454 -682 -454!-682 -454[-494 -454 -361 -321!-361 -321[-228 -188 -228 0"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

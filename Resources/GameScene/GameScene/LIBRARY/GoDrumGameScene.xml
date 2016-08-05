@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="GoDrumGameScene" itemID="57a2012b-00000146" linkageExportForAS="true" linkageClassName="io.voodoo.game.GoDrumGameScene" lastModified="1470390664" lastUniqueIdentifier="3">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="GoDrumGameScene" itemID="57a2012b-00000146" linkageExportForAS="true" linkageClassName="io.voodoo.game.GoDrumGameScene" lastModified="1470406679" lastUniqueIdentifier="3">
   <timeline>
     <DOMTimeline name="GoDrumGameScene">
       <layers>
