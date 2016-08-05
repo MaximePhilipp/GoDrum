@@ -1,6 +1,6 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Drums/TargetDrumEnemy" itemID="57a311e6-000005d2" linkageExportForAS="true" linkageBaseClass="io.voodoo.game.drums.TargetDrum" linkageClassName="io.voodoo.game.drums.targets.TargetDrumEnemy" lastModified="1470322843" lastUniqueIdentifier="1" isSpriteSubclass="true">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Drums/TargetDrumEnemy" itemID="57a311e6-000005d2" linkageExportForAS="true" linkageBaseClass="io.voodoo.game.drums.TargetDrum" linkageClassName="io.voodoo.game.drums.targets.TargetDrumEnemy" lastModified="1470415340" lastUniqueIdentifier="1" isSpriteSubclass="true">
   <timeline>
-    <DOMTimeline name="TargetDrumEnemy" currentFrame="1">
+    <DOMTimeline name="TargetDrumEnemy">
       <layers>
         <DOMLayer name="Frames" color="#FF800A" locked="true" autoNamed="false">
           <frames>

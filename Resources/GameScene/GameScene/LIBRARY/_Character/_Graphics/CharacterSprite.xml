@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Character/_Graphics/CharacterSprite" itemID="57a46bed-000012a6" linkageExportForAS="true" linkageClassName="io.voodoo.game.characters.Character" lastModified="1470408305" lastUniqueIdentifier="2">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Character/_Graphics/CharacterSprite" itemID="57a46bed-000012a6" linkageExportForAS="true" linkageClassName="io.voodoo.game.characters.Character" lastModified="1470411363" lastUniqueIdentifier="2">
   <timeline>
     <DOMTimeline name="CharacterSprite" currentFrame="92" guides='&lt;guidelines&gt;&lt;guideline direction="h"&gt;334&lt;/guideline&gt;&lt;guideline direction="h"&gt;623&lt;/guideline&gt;&lt;guideline direction="v"&gt;532&lt;/guideline&gt;&lt;guideline direction="h"&gt;339&lt;/guideline&gt;&lt;guideline direction="v"&gt;433&lt;/guideline&gt;&lt;guideline direction="v"&gt;551&lt;/guideline&gt;&lt;guideline direction="h"&gt;521&lt;/guideline&gt;&lt;/guidelines&gt;'>
       <layers>

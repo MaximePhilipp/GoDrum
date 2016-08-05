@@ -38,13 +38,13 @@
           <Include href="_Character/_Graphics/Character_leftLeg.xml" loadImmediate="false" itemID="57a49017-000013ad" lastModified="1470402583"/>
           <Include href="_Character/_Graphics/Character_rghtLeg.xml" loadImmediate="false" itemID="57a49023-000013b1" lastModified="1470402595"/>
           <Include href="_Character/_Graphics/Character_RightArm.xml" loadImmediate="false" itemID="57a4903d-000013b9" lastModified="1470402621"/>
-          <Include href="_Character/_Graphics/CharacterSprite.xml" itemID="57a46bed-000012a6" lastModified="1470408305"/>
+          <Include href="_Character/_Graphics/CharacterSprite.xml" itemID="57a46bed-000012a6" lastModified="1470411363"/>
           <Include href="_Character/_Graphics/Characthair.xml" loadImmediate="false" itemID="57a48f81-00001398" lastModified="1470402433"/>
-          <Include href="_DrumBoxes/ActionsDrumsBox.xml" itemID="57a34ee2-00001111" lastModified="1470352864"/>
-          <Include href="_DrumBoxes/DetailsDrumsBox.xml" itemID="57a352c5-00001169" lastModified="1470352875"/>
-          <Include href="_DrumBoxes/TargetsDrumsBox.xml" itemID="57a35210-00001143" lastModified="1470352880"/>
+          <Include href="_DrumBoxes/ActionsDrumsBox.xml" itemID="57a34ee2-00001111" lastModified="1470411627"/>
+          <Include href="_DrumBoxes/DetailsDrumsBox.xml" itemID="57a352c5-00001169" lastModified="1470411595"/>
+          <Include href="_DrumBoxes/TargetsDrumsBox.xml" itemID="57a35210-00001143" lastModified="1470411588"/>
           <Include href="_Drums/_Graphics/DrumSprite.xml" loadImmediate="false" itemID="57a30a0a-0000056e" lastModified="1470303035"/>
-          <Include href="_Drums/ActionDrumAttack.xml" itemID="57a313e6-000005fe" lastModified="1470322793"/>
+          <Include href="_Drums/ActionDrumAttack.xml" itemID="57a313e6-000005fe" lastModified="1470412094"/>
           <Include href="_Drums/ActionDrumDefend.xml" itemID="57a30fbc-000005a6" lastModified="1470322798"/>
           <Include href="_Drums/ActionDrumLiftLay.xml" itemID="57a30eb2-0000058e" lastModified="1470322802"/>
           <Include href="_Drums/ActionDrumMoveBackwards.xml" itemID="57a313d6-000005fd" lastModified="1470322809"/>
@@ -52,7 +52,7 @@
           <Include href="_Drums/DetailDrumBig.xml" itemID="57a31342-000005fb" lastModified="1470322825"/>
           <Include href="_Drums/DetailDrumFast.xml" itemID="57a3130e-000005f7" lastModified="1470322829"/>
           <Include href="_Drums/DetailDrumSmall.xml" itemID="57a31333-000005fa" lastModified="1470322833"/>
-          <Include href="_Drums/TargetDrumEnemy.xml" itemID="57a311e6-000005d2" lastModified="1470322843"/>
+          <Include href="_Drums/TargetDrumEnemy.xml" itemID="57a311e6-000005d2" lastModified="1470415340"/>
           <Include href="_Drums/TargetDrumItem.xml" itemID="57a3116a-000005c5" lastModified="1470322848"/>
           <Include href="_Drums/TargetDrumItself.xml" itemID="57a3108c-000005b4" lastModified="1470322852"/>
           <Include href="_DrumTabs/_Graphics/BlueTab.xml" loadImmediate="false" itemID="57a1fe5c-0000012b" lastModified="1470319631"/>
@@ -109,47 +109,47 @@
           </DOMTimeline>
      </timelines>
      <persistentData>
-          <PD n="com.air.artemis.ipadest" v="GameScene.ipa"/>
-          <PD n="com.air.artemis.ipaopt" v="test"/>
+          <PD n="com.air.artemis.ipadest" v="GoDrum.ipa"/>
+          <PD n="com.air.artemis.ipaopt" v="adhoc"/>
+          <PD n="com.air.oldTargetPlatform" v="iOS"/>
+          <PD n="com.air.artemis.included.count" v="5"/>
           <PD n="ane.tmp.unzipped.folder" v="C:\Users\Maxime\AppData\Local\Temp\Tmp_ANE_File_Unzipped_Packages"/>
           <PD n="DebugMovieChecked" v="OnDevice"/>
-          <PD n="com.air.artemis.included.count" v="5"/>
-          <PD n="com.air.oldTargetPlatform" v="iOS"/>
           <PD n="com.air.sdk.path" v="D:\SDK\4.13.0_AIR_15.0.0.349_BETA"/>
-          <PD n="com.air.artemis.pubipa" v="true"/>
           <PD n="com.air.artemis.included.item0" v="D:/GoDrum/Resources/LaunchImages/Default.png"/>
-          <PD n="com.air.artemis.ipacertpath" v="D:/GoDrum/Resources/Certificates/Certificats_MaximePhilipp.p12"/>
-          <PD n="com.air.artemis.hostip" v="Connexion réseau sans fil &lt;192.168.0.30&gt;"/>
+          <PD n="com.air.artemis.pubipa" v="true"/>
           <PD n="com.air.artemis.included.item1" v="D:/GoDrum/Resources/LaunchImages/Default@2x.png"/>
+          <PD n="com.air.artemis.hostip" v="Connexion réseau sans fil &lt;192.168.0.30&gt;"/>
+          <PD n="com.air.artemis.ipacertpath" v="D:/GoDrum/Resources/Certificates/Certificats_MaximePhilipp.p12"/>
           <PD n="com.air.artemis.included.item2" v="D:/GoDrum/Resources/LaunchImages/Default-568h@2x.png"/>
-          <PD n="flash.swf.basename" v="GameScene"/>
           <PD n="com.air.artemis.included.item3" v="D:/GoDrum/Resources/LaunchImages/Default-667h@2x.png"/>
+          <PD n="flash.swf.basename" v="GameScene"/>
           <PD n="com.air.artemis.included.item4" v="D:/GoDrum/Resources/LaunchImages/Default-736h@3x.png"/>
-          <PD n="swf.folder.path" v="D:/GoDrum/Resources/GameScene/"/>
           <PD n="flash.fla.filepath" v="D:/GoDrum/Resources/GameScene/GameScene/GameScene.xfl"/>
+          <PD n="swf.folder.path" v="D:/GoDrum/Resources/GameScene/"/>
           <PD n="com.air.artemis.ipaprovision" v="D:/GoDrum/Resources/Certificates/Voodoo_Wildcard_Provisioning_Profile.mobileprovision"/>
      </persistentData>
      <PrinterSettings/>
      <publishHistory>
-          <PublishItem publishSize="742357" publishTime="1470410080" publishDebug="true"/>
-          <PublishItem publishSize="742418" publishTime="1470410069" publishDebug="true"/>
-          <PublishItem publishSize="742356" publishTime="1470410063" publishDebug="true"/>
-          <PublishItem publishSize="742298" publishTime="1470410035" publishDebug="true"/>
-          <PublishItem publishSize="742301" publishTime="1470410022" publishDebug="true"/>
-          <PublishItem publishSize="742286" publishTime="1470409985" publishDebug="true"/>
-          <PublishItem publishSize="742317" publishTime="1470409939" publishDebug="true"/>
-          <PublishItem publishSize="742259" publishTime="1470409699"/>
-          <PublishItem publishSize="742249" publishTime="1470408875"/>
-          <PublishItem publishSize="742248" publishTime="1470408871" publishDebug="true"/>
-          <PublishItem publishSize="742252" publishTime="1470408777"/>
-          <PublishItem publishSize="742249" publishTime="1470408773" publishDebug="true"/>
-          <PublishItem publishSize="742269" publishTime="1470408759" publishDebug="true"/>
-          <PublishItem publishSize="742176" publishTime="1470408741" publishDebug="true"/>
-          <PublishItem publishSize="742175" publishTime="1470408735" publishDebug="true"/>
-          <PublishItem publishSize="742176" publishTime="1470408727" publishDebug="true"/>
-          <PublishItem publishSize="742196" publishTime="1470408721" publishDebug="true"/>
-          <PublishItem publishSize="742178" publishTime="1470408660"/>
-          <PublishItem publishSize="742166" publishTime="1470408598"/>
-          <PublishItem publishSize="742181" publishTime="1470408595" publishDebug="true"/>
+          <PublishItem publishSize="795207" publishTime="1470414931"/>
+          <PublishItem publishSize="795205" publishTime="1470414809"/>
+          <PublishItem publishSize="842475" publishTime="1470414684"/>
+          <PublishItem publishSize="842491" publishTime="1470414619" publishDebug="true"/>
+          <PublishItem publishSize="842452" publishTime="1470414515"/>
+          <PublishItem publishSize="842462" publishTime="1470414509" publishDebug="true"/>
+          <PublishItem publishSize="842461" publishTime="1470414404"/>
+          <PublishItem publishSize="842461" publishTime="1470414400" publishDebug="true"/>
+          <PublishItem publishSize="842454" publishTime="1470414396" publishDebug="true"/>
+          <PublishItem publishSize="842461" publishTime="1470414338"/>
+          <PublishItem publishSize="842447" publishTime="1470414323" publishDebug="true"/>
+          <PublishItem publishSize="842439" publishTime="1470414286" publishDebug="true"/>
+          <PublishItem publishSize="842371" publishTime="1470414235" publishDebug="true"/>
+          <PublishItem publishSize="842337" publishTime="1470414209" publishDebug="true"/>
+          <PublishItem publishSize="842281" publishTime="1470414135" publishDebug="true"/>
+          <PublishItem publishSize="842192" publishTime="1470414031" publishDebug="true"/>
+          <PublishItem publishSize="842220" publishTime="1470414017" publishDebug="true"/>
+          <PublishItem publishSize="150213" publishTime="1470413802" publishDebug="true"/>
+          <PublishItem publishSize="842141" publishTime="1470413567" publishDebug="true"/>
+          <PublishItem publishSize="842147" publishTime="1470413503" publishDebug="true"/>
      </publishHistory>
 </DOMDocument>

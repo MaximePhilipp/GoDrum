@@ -19,9 +19,9 @@
 <application xmlns="http://ns.adobe.com/air/application/15.0">
   <id>io.voodoo.GodDrum</id>
   <versionNumber>1.0</versionNumber>
-  <filename>GameScene</filename>
+  <filename>GoDrum</filename>
   <description/>
-  <name>GameScene</name>
+  <name>GoDrum</name>
   <copyright/>
   <initialWindow>
     <content>GameScene.swf</content>

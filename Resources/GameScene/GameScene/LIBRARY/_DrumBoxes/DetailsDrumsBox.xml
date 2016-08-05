@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_DrumBoxes/DetailsDrumsBox" itemID="57a352c5-00001169" linkageExportForAS="true" linkageBaseClass="flash.display.Sprite" linkageClassName="io.voodoo.game.display.drumboxes.DetailsDrumsBox" lastModified="1470352875" isSpriteSubclass="true">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_DrumBoxes/DetailsDrumsBox" itemID="57a352c5-00001169" linkageExportForAS="true" linkageBaseClass="flash.display.Sprite" linkageClassName="io.voodoo.game.display.drumboxes.DetailsDrumsBox" lastModified="1470411595" isSpriteSubclass="true">
   <timeline>
     <DOMTimeline name="DetailsDrumsBox">
       <layers>
@@ -6,9 +6,9 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_DrumTabs/_Graphics/PurpleTab">
+                <DOMSymbolInstance libraryItemName="_DrumTabs/_Graphics/PurpleTab" selected="true">
                   <matrix>
-                    <Matrix a="1.25" d="3" tx="50"/>
+                    <Matrix a="1.5" d="3" tx="60"/>
                   </matrix>
                   <transformationPoint>
                     <Point y="-0.05"/>
@@ -17,25 +17,25 @@
                     <Color alphaMultiplier="0.69921875"/>
                   </color>
                 </DOMSymbolInstance>
-                <DOMSymbolInstance libraryItemName="_Drums/DetailDrumBig" name="bigDrum">
+                <DOMSymbolInstance libraryItemName="_Drums/DetailDrumBig" name="bigDrum" selected="true">
                   <matrix>
-                    <Matrix a="0.617279052734375" d="0.617279052734375" tx="50" ty="-141.3"/>
+                    <Matrix a="0.7716064453125" d="0.7716064453125" tx="60" ty="-141.3"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>
                 </DOMSymbolInstance>
-                <DOMSymbolInstance libraryItemName="_Drums/DetailDrumFast" name="fastDrum">
+                <DOMSymbolInstance libraryItemName="_Drums/DetailDrumFast" name="fastDrum" selected="true">
                   <matrix>
-                    <Matrix a="0.617279052734375" d="0.617279052734375" tx="50" ty="141.3"/>
+                    <Matrix a="0.7716064453125" d="0.7716064453125" tx="60" ty="141.3"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>
                 </DOMSymbolInstance>
-                <DOMSymbolInstance libraryItemName="_Drums/DetailDrumSmall" name="smallDrum">
+                <DOMSymbolInstance libraryItemName="_Drums/DetailDrumSmall" name="smallDrum" selected="true">
                   <matrix>
-                    <Matrix a="0.617279052734375" d="0.617279052734375" tx="50"/>
+                    <Matrix a="0.7716064453125" d="0.7716064453125" tx="60"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
