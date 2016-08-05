@@ -11,8 +11,8 @@ package io.voodoo.game.maps {
 	public class Map1 extends Sprite {
 		
 		// CONSTANTS :
-		private static const MOVE_STEP:Number = 300;
-		public static const MOVE_DURATION:Number = 3;
+		private static const MOVE_STEP:Number = 200;
+		public static const MOVE_DURATION:Number = 2;
 		
 		// PROPERTIES :
 		private var _currentGroundYPosition:Number;
@@ -23,7 +23,7 @@ package io.voodoo.game.maps {
 		// CONSTRUCTOR :
 		public function Map1() {
 			super();
-			_currentGroundYPosition = 700.0;
+			_currentGroundYPosition = 720.0;
 			this.cacheAsBitmap = true;
 		}
 		

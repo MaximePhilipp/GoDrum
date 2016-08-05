@@ -89,6 +89,7 @@ package io.voodoo.game {
 		}
 		private var drums:Vector.<Drum>;
 		private var characters:Vector.<Character>;
+		private var breatheDelayCalls:Vector.<TweenLite>;
 		
 		private var actionDrumsTabActivated:Boolean;
 		private var targetDrumsTabActivated:Boolean;
@@ -114,6 +115,7 @@ package io.voodoo.game {
 			super();
 			_instance = this;
 			isGoingForward = true;
+			breatheDelayCalls = new Vector.<TweenLite>();
 		}
 		
 		
@@ -171,8 +173,8 @@ package io.voodoo.game {
 			
 			var i:int, n:int = characters.length;
 			for(i = 0 ; i < n ; i++) {
-				characters[i].x = (-100 + (100*i)) + (characters[i].width / characters[i].scaleX) + 40;
-				characters[i].y = randRange(-30,30) + (characters[i].height / characters[i].scaleY) + 100;
+				characters[i].x = screen.x + screen.width/2 + (-100 + (100*i));
+				characters[i].y = randRange(-30,30) + map.currentGroundYPosition - characters[i].height/2;
 				this.addChild(characters[i]);
 				characters[i].breathe();
 			}
@@ -274,41 +276,50 @@ package io.voodoo.game {
 		private function onMoveForward():void {
 			if(!isGoingForward) {
 				for each(var character:Character in characters) {
-					TweenLite.to(character, 0.1, {scaleX:-scaleX, onComplete:moveForward});
+					TweenLite.to(character, 0.2, {scaleX:-character.scaleX, onComplete:moveForward});
 				}
 			}
 			else
 				moveForward();
-		}
-		
-		private function moveForward():void {
-			for each(var character:Character in characters) {
-				character.walk();
-				TweenLite.delayedCall(Map1.MOVE_DURATION, character.breathe);
+			
+			function moveForward():void {
+				for each(var tween:TweenLite in breatheDelayCalls) {
+					tween.kill();
+				}
+				
+				for each(var character:Character in characters) {
+					character.walk();
+					breatheDelayCalls.push(TweenLite.delayedCall(Map1.MOVE_DURATION, character.breathe));
+				}
+				map.moveForward();
+				isGoingForward = true;
 			}
-			map.moveForward();
-			isGoingForward = true;
 		}
 		
 		
 		private function onMoveBackwards():void {
 			if(isGoingForward) {
 				for each(var character:Character in characters) {
-					TweenLite.to(character, 0.1, {scaleX:-scaleX, onComplete:moveBackwards});
+					TweenLite.to(character, 0.2, {scaleX:-character.scaleX, onComplete:moveBackwards});
 				}
 			}
 			else
 				moveBackwards();
-		}
-		
-		private function moveBackwards():void {
-			for each(var character:Character in characters) {
-				character.walk();
-				TweenLite.delayedCall(Map1.MOVE_DURATION, character.breathe);
+			
+			function moveBackwards():void {
+				for each(var tween:TweenLite in breatheDelayCalls) {
+					tween.kill();
+				}
+				
+				for each(var character:Character in characters) {
+					character.walk();
+					breatheDelayCalls.push(TweenLite.delayedCall(Map1.MOVE_DURATION, character.breathe));
+				}
+				map.moveBackwards();
+				isGoingForward = false;
 			}
-			map.moveBackwards();
-			isGoingForward = false;
 		}
+
 		
 		private function onAttack():void {
 			// TODO

@@ -38,7 +38,7 @@
           <Include href="_Character/_Graphics/Character_leftLeg.xml" loadImmediate="false" itemID="57a49017-000013ad" lastModified="1470402583"/>
           <Include href="_Character/_Graphics/Character_rghtLeg.xml" loadImmediate="false" itemID="57a49023-000013b1" lastModified="1470402595"/>
           <Include href="_Character/_Graphics/Character_RightArm.xml" loadImmediate="false" itemID="57a4903d-000013b9" lastModified="1470402621"/>
-          <Include href="_Character/_Graphics/CharacterSprite.xml" itemID="57a46bed-000012a6" lastModified="1470406739"/>
+          <Include href="_Character/_Graphics/CharacterSprite.xml" itemID="57a46bed-000012a6" lastModified="1470408305"/>
           <Include href="_Character/_Graphics/Characthair.xml" loadImmediate="false" itemID="57a48f81-00001398" lastModified="1470402433"/>
           <Include href="_DrumBoxes/ActionsDrumsBox.xml" itemID="57a34ee2-00001111" lastModified="1470352864"/>
           <Include href="_DrumBoxes/DetailsDrumsBox.xml" itemID="57a352c5-00001169" lastModified="1470352875"/>
@@ -112,44 +112,44 @@
           <PD n="com.air.artemis.ipadest" v="GameScene.ipa"/>
           <PD n="com.air.artemis.ipaopt" v="test"/>
           <PD n="ane.tmp.unzipped.folder" v="C:\Users\Maxime\AppData\Local\Temp\Tmp_ANE_File_Unzipped_Packages"/>
-          <PD n="com.air.oldTargetPlatform" v="iOS"/>
-          <PD n="com.air.artemis.included.count" v="5"/>
           <PD n="DebugMovieChecked" v="OnDevice"/>
+          <PD n="com.air.artemis.included.count" v="5"/>
+          <PD n="com.air.oldTargetPlatform" v="iOS"/>
           <PD n="com.air.sdk.path" v="D:\SDK\4.13.0_AIR_15.0.0.349_BETA"/>
-          <PD n="com.air.artemis.included.item0" v="D:/GoDrum/Resources/LaunchImages/Default.png"/>
           <PD n="com.air.artemis.pubipa" v="true"/>
-          <PD n="com.air.artemis.included.item1" v="D:/GoDrum/Resources/LaunchImages/Default@2x.png"/>
-          <PD n="com.air.artemis.hostip" v="Connexion réseau sans fil &lt;192.168.0.30&gt;"/>
+          <PD n="com.air.artemis.included.item0" v="D:/GoDrum/Resources/LaunchImages/Default.png"/>
           <PD n="com.air.artemis.ipacertpath" v="D:/GoDrum/Resources/Certificates/Certificats_MaximePhilipp.p12"/>
+          <PD n="com.air.artemis.hostip" v="Connexion réseau sans fil &lt;192.168.0.30&gt;"/>
+          <PD n="com.air.artemis.included.item1" v="D:/GoDrum/Resources/LaunchImages/Default@2x.png"/>
           <PD n="com.air.artemis.included.item2" v="D:/GoDrum/Resources/LaunchImages/Default-568h@2x.png"/>
-          <PD n="com.air.artemis.included.item3" v="D:/GoDrum/Resources/LaunchImages/Default-667h@2x.png"/>
           <PD n="flash.swf.basename" v="GameScene"/>
+          <PD n="com.air.artemis.included.item3" v="D:/GoDrum/Resources/LaunchImages/Default-667h@2x.png"/>
           <PD n="com.air.artemis.included.item4" v="D:/GoDrum/Resources/LaunchImages/Default-736h@3x.png"/>
-          <PD n="flash.fla.filepath" v="D:/GoDrum/Resources/GameScene/GameScene/GameScene.xfl"/>
           <PD n="swf.folder.path" v="D:/GoDrum/Resources/GameScene/"/>
+          <PD n="flash.fla.filepath" v="D:/GoDrum/Resources/GameScene/GameScene/GameScene.xfl"/>
           <PD n="com.air.artemis.ipaprovision" v="D:/GoDrum/Resources/Certificates/Voodoo_Wildcard_Provisioning_Profile.mobileprovision"/>
      </persistentData>
      <PrinterSettings/>
      <publishHistory>
-          <PublishItem publishSize="742314" publishTime="1470407216" publishDebug="true"/>
-          <PublishItem publishSize="742279" publishTime="1470407137" publishDebug="true"/>
-          <PublishItem publishSize="742154" publishTime="1470406980" publishDebug="true"/>
-          <PublishItem publishSize="742148" publishTime="1470406958" publishDebug="true"/>
-          <PublishItem publishSize="742157" publishTime="1470406950" publishDebug="true"/>
-          <PublishItem publishSize="742139" publishTime="1470406929" publishDebug="true"/>
-          <PublishItem publishSize="742071" publishTime="1470406911" publishDebug="true"/>
-          <PublishItem publishSize="742065" publishTime="1470406830"/>
-          <PublishItem publishSize="742072" publishTime="1470406827" publishDebug="true"/>
-          <PublishItem publishSize="742085" publishTime="1470406745"/>
-          <PublishItem publishSize="742429" publishTime="1470406706"/>
-          <PublishItem publishSize="741782" publishTime="1470406665"/>
-          <PublishItem publishSize="741786" publishTime="1470406655"/>
-          <PublishItem publishSize="741789" publishTime="1470406642"/>
-          <PublishItem publishSize="741788" publishTime="1470406638" publishDebug="true"/>
-          <PublishItem publishSize="741795" publishTime="1470406628"/>
-          <PublishItem publishSize="741784" publishTime="1470406624" publishDebug="true"/>
-          <PublishItem publishSize="741776" publishTime="1470406605"/>
-          <PublishItem publishSize="741782" publishTime="1470406591"/>
-          <PublishItem publishSize="741782" publishTime="1470406588" publishDebug="true"/>
+          <PublishItem publishSize="742357" publishTime="1470410080" publishDebug="true"/>
+          <PublishItem publishSize="742418" publishTime="1470410069" publishDebug="true"/>
+          <PublishItem publishSize="742356" publishTime="1470410063" publishDebug="true"/>
+          <PublishItem publishSize="742298" publishTime="1470410035" publishDebug="true"/>
+          <PublishItem publishSize="742301" publishTime="1470410022" publishDebug="true"/>
+          <PublishItem publishSize="742286" publishTime="1470409985" publishDebug="true"/>
+          <PublishItem publishSize="742317" publishTime="1470409939" publishDebug="true"/>
+          <PublishItem publishSize="742259" publishTime="1470409699"/>
+          <PublishItem publishSize="742249" publishTime="1470408875"/>
+          <PublishItem publishSize="742248" publishTime="1470408871" publishDebug="true"/>
+          <PublishItem publishSize="742252" publishTime="1470408777"/>
+          <PublishItem publishSize="742249" publishTime="1470408773" publishDebug="true"/>
+          <PublishItem publishSize="742269" publishTime="1470408759" publishDebug="true"/>
+          <PublishItem publishSize="742176" publishTime="1470408741" publishDebug="true"/>
+          <PublishItem publishSize="742175" publishTime="1470408735" publishDebug="true"/>
+          <PublishItem publishSize="742176" publishTime="1470408727" publishDebug="true"/>
+          <PublishItem publishSize="742196" publishTime="1470408721" publishDebug="true"/>
+          <PublishItem publishSize="742178" publishTime="1470408660"/>
+          <PublishItem publishSize="742166" publishTime="1470408598"/>
+          <PublishItem publishSize="742181" publishTime="1470408595" publishDebug="true"/>
      </publishHistory>
 </DOMDocument>

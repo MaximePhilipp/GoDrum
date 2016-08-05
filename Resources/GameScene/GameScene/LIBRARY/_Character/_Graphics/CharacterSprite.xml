@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Character/_Graphics/CharacterSprite" itemID="57a46bed-000012a6" linkageExportForAS="true" linkageClassName="io.voodoo.game.characters.Character" lastModified="1470406739" lastUniqueIdentifier="2">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="_Character/_Graphics/CharacterSprite" itemID="57a46bed-000012a6" linkageExportForAS="true" linkageClassName="io.voodoo.game.characters.Character" lastModified="1470408305" lastUniqueIdentifier="2">
   <timeline>
     <DOMTimeline name="CharacterSprite" currentFrame="92" guides='&lt;guidelines&gt;&lt;guideline direction="h"&gt;334&lt;/guideline&gt;&lt;guideline direction="h"&gt;623&lt;/guideline&gt;&lt;guideline direction="v"&gt;532&lt;/guideline&gt;&lt;guideline direction="h"&gt;339&lt;/guideline&gt;&lt;guideline direction="v"&gt;433&lt;/guideline&gt;&lt;guideline direction="v"&gt;551&lt;/guideline&gt;&lt;guideline direction="h"&gt;521&lt;/guideline&gt;&lt;/guidelines&gt;'>
       <layers>
@@ -27,7 +27,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Guide" color="#9933CC" autoNamed="false" layerType="guide">
+        <DOMLayer name="Guide" color="#9933CC" locked="true" current="true" isSelected="true" autoNamed="false" layerType="guide">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
@@ -49,9 +49,13 @@
                     </StrokeStyle>
                   </strokes>
                   <edges>
-                    <Edge strokeStyle="2" edges="!20480 0|23893 0!23893 15360|20480 15360!23893 0|23893 15360"/>
-                    <Edge strokeStyle="1" edges="!20480 0|20480 15360!0 15360|0 0"/>
-                    <Edge strokeStyle="2" edges="!0 0|20480 0!20480 15360|0 15360!-3413 15360|-3413 0!-3413 0|0 0!0 15360|-3413 15360"/>
+                    <Edge strokeStyle="2" edges="!20480 0|23893 0!23893 15360|20480 15360"/>
+                    <Edge strokeStyle="1" edges="!20480 0|20480 15360"/>
+                    <Edge strokeStyle="2" edges="!23893 0|23893 15360"/>
+                    <Edge strokeStyle="1" edges="!186 5191|186 0"/>
+                    <Edge strokeStyle="2" edges="!186 0|6501.5 0"/>
+                    <Edge strokeStyle="1" edges="!0 15360|0 5191"/>
+                    <Edge strokeStyle="2" edges="!6501.5 0|20480 0!20480 15360|0 15360!-3227 5191|-3227 0!-3413 15360|-3413 5191!-3227 0|186 0!0 15360|-3413 15360"/>
                   </edges>
                 </DOMShape>
               </elements>
@@ -76,11 +80,11 @@
                     </StrokeStyle>
                   </strokes>
                   <edges>
-                    <Edge strokeStyle="2" edges="!20480 0|23893 0!23893 15360|20480 15360"/>
-                    <Edge strokeStyle="1" edges="!20480 0|20480 15360"/>
-                    <Edge strokeStyle="2" edges="!23893 0|23893 15360"/>
-                    <Edge strokeStyle="1" edges="!0 15360|0 0"/>
-                    <Edge strokeStyle="2" edges="!20480 15360|0 15360!0 0|20480 0!-3413 15360|-3413 0!0 15360|-3413 15360!-3413 0|0 0"/>
+                    <Edge strokeStyle="2" edges="!20480 0|23893 0!23893 15360|20480 15360!23893 0|23893 15360"/>
+                    <Edge strokeStyle="1" edges="!20480 0|20480 15360!186 5191|186 0"/>
+                    <Edge strokeStyle="2" edges="!186 0|6501.5 0"/>
+                    <Edge strokeStyle="1" edges="!0 15360|0 5191"/>
+                    <Edge strokeStyle="2" edges="!6501.5 0|20480 0!20480 15360|0 15360!-3227 5191|-3227 0!-3413 15360|-3413 5191!-3227 0|186 0!0 15360|-3413 15360"/>
                   </edges>
                 </DOMShape>
               </elements>
@@ -105,41 +109,18 @@
                     </StrokeStyle>
                   </strokes>
                   <edges>
-                    <Edge strokeStyle="2" edges="!20480 0|23893 0!23893 15360|20480 15360!23893 0|23893 15360"/>
-                    <Edge strokeStyle="1" edges="!20480 0|20480 15360!0 15360|0 0"/>
-                    <Edge strokeStyle="2" edges="!0 0|20480 0!20480 15360|0 15360!-3413 15360|-3413 0!-3413 0|0 0!0 15360|-3413 15360"/>
+                    <Edge strokeStyle="2" edges="!20480 0|23893 0!23893 15360|20480 15360"/>
+                    <Edge strokeStyle="1" edges="!20480 0|20480 15360"/>
+                    <Edge strokeStyle="2" edges="!23893 0|23893 15360"/>
+                    <Edge strokeStyle="1" edges="!186 5191|186 0"/>
+                    <Edge strokeStyle="2" edges="!186 0|6501.5 0"/>
+                    <Edge strokeStyle="1" edges="!0 15360|0 5191"/>
+                    <Edge strokeStyle="2" edges="!6501.5 0|20480 0!20480 15360|0 15360!-3227 5191|-3227 0!-3413 15360|-3413 5191!-3227 0|186 0!0 15360|-3413 15360"/>
                   </edges>
                 </DOMShape>
               </elements>
             </DOMFrame>
             <DOMFrame index="48" keyMode="9728">
-              <elements>
-                <DOMShape>
-                  <strokes>
-                    <StrokeStyle index="1">
-                      <SolidStroke scaleMode="normal" sharpCorners="true">
-                        <fill>
-                          <SolidColor color="#003366"/>
-                        </fill>
-                      </SolidStroke>
-                    </StrokeStyle>
-                    <StrokeStyle index="2">
-                      <SolidStroke scaleMode="normal" sharpCorners="true">
-                        <fill>
-                          <SolidColor color="#FF0000"/>
-                        </fill>
-                      </SolidStroke>
-                    </StrokeStyle>
-                  </strokes>
-                  <edges>
-                    <Edge strokeStyle="2" edges="!20480 0|23893 0!23893 15360|20480 15360!23893 0|23893 15360"/>
-                    <Edge strokeStyle="1" edges="!20480 0|20480 15360!0 15360|0 0"/>
-                    <Edge strokeStyle="2" edges="!0 0|20480 0!20480 15360|0 15360!-3413 15360|-3413 0!-3413 0|0 0!0 15360|-3413 15360"/>
-                  </edges>
-                </DOMShape>
-              </elements>
-            </DOMFrame>
-            <DOMFrame index="49" duration="9" keyMode="9728">
               <elements>
                 <DOMShape>
                   <strokes>
@@ -162,8 +143,39 @@
                     <Edge strokeStyle="2" edges="!20480 0|23893 0!23893 15360|20480 15360"/>
                     <Edge strokeStyle="1" edges="!20480 0|20480 15360"/>
                     <Edge strokeStyle="2" edges="!23893 0|23893 15360"/>
-                    <Edge strokeStyle="1" edges="!0 15360|0 0"/>
-                    <Edge strokeStyle="2" edges="!20480 15360|0 15360!0 0|20480 0!-3413 15360|-3413 0!0 15360|-3413 15360!-3413 0|0 0"/>
+                    <Edge strokeStyle="1" edges="!186 5191|186 0"/>
+                    <Edge strokeStyle="2" edges="!186 0|6501.5 0"/>
+                    <Edge strokeStyle="1" edges="!0 15360|0 5191"/>
+                    <Edge strokeStyle="2" edges="!6501.5 0|20480 0!20480 15360|0 15360!-3227 5191|-3227 0!-3413 15360|-3413 5191!-3227 0|186 0!0 15360|-3413 15360"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="49" duration="9" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <strokes>
+                    <StrokeStyle index="1">
+                      <SolidStroke scaleMode="normal" sharpCorners="true">
+                        <fill>
+                          <SolidColor color="#003366"/>
+                        </fill>
+                      </SolidStroke>
+                    </StrokeStyle>
+                    <StrokeStyle index="2">
+                      <SolidStroke scaleMode="normal" sharpCorners="true">
+                        <fill>
+                          <SolidColor color="#FF0000"/>
+                        </fill>
+                      </SolidStroke>
+                    </StrokeStyle>
+                  </strokes>
+                  <edges>
+                    <Edge strokeStyle="2" edges="!20480 0|23893 0!23893 15360|20480 15360!23893 0|23893 15360"/>
+                    <Edge strokeStyle="1" edges="!20480 0|20480 15360!186 5191|186 0"/>
+                    <Edge strokeStyle="2" edges="!186 0|6501.5 0"/>
+                    <Edge strokeStyle="1" edges="!0 15360|0 5191"/>
+                    <Edge strokeStyle="2" edges="!6501.5 0|20480 0!20480 15360|0 15360!-3227 5191|-3227 0!-3413 15360|-3413 5191!-3227 0|186 0!0 15360|-3413 15360"/>
                   </edges>
                 </DOMShape>
               </elements>
@@ -188,9 +200,13 @@
                     </StrokeStyle>
                   </strokes>
                   <edges>
-                    <Edge strokeStyle="2" edges="!20480 0|23893 0!23893 15360|20480 15360!23893 0|23893 15360"/>
-                    <Edge strokeStyle="1" edges="!20480 0|20480 15360!0 15360|0 0"/>
-                    <Edge strokeStyle="2" edges="!0 0|20480 0!20480 15360|0 15360!-3413 15360|-3413 0!-3413 0|0 0!0 15360|-3413 15360"/>
+                    <Edge strokeStyle="2" edges="!20480 0|23893 0!23893 15360|20480 15360"/>
+                    <Edge strokeStyle="1" edges="!20480 0|20480 15360"/>
+                    <Edge strokeStyle="2" edges="!23893 0|23893 15360"/>
+                    <Edge strokeStyle="1" edges="!186 5191|186 0"/>
+                    <Edge strokeStyle="2" edges="!186 0|6501.5 0"/>
+                    <Edge strokeStyle="1" edges="!0 15360|0 5191"/>
+                    <Edge strokeStyle="2" edges="!6501.5 0|20480 0!20480 15360|0 15360!-3227 5191|-3227 0!-3413 15360|-3413 5191!-3227 0|186 0!0 15360|-3413 15360"/>
                   </edges>
                 </DOMShape>
               </elements>
@@ -215,9 +231,13 @@
                     </StrokeStyle>
                   </strokes>
                   <edges>
-                    <Edge strokeStyle="2" edges="!20480 0|23893 0!23893 15360|20480 15360!23893 0|23893 15360"/>
-                    <Edge strokeStyle="1" edges="!20480 0|20480 15360!0 15360|0 0"/>
-                    <Edge strokeStyle="2" edges="!0 0|20480 0!20480 15360|0 15360!-3413 15360|-3413 0!-3413 0|0 0!0 15360|-3413 15360"/>
+                    <Edge strokeStyle="2" edges="!20480 0|23893 0!23893 15360|20480 15360"/>
+                    <Edge strokeStyle="1" edges="!20480 0|20480 15360"/>
+                    <Edge strokeStyle="2" edges="!23893 0|23893 15360"/>
+                    <Edge strokeStyle="1" edges="!186 5191|186 0"/>
+                    <Edge strokeStyle="2" edges="!186 0|6501.5 0"/>
+                    <Edge strokeStyle="1" edges="!0 15360|0 5191"/>
+                    <Edge strokeStyle="2" edges="!6501.5 0|20480 0!20480 15360|0 15360!-3227 5191|-3227 0!-3413 15360|-3413 5191!-3227 0|186 0!0 15360|-3413 15360"/>
                   </edges>
                 </DOMShape>
               </elements>
@@ -242,9 +262,13 @@
                     </StrokeStyle>
                   </strokes>
                   <edges>
-                    <Edge strokeStyle="2" edges="!20480 0|23893 0!23893 15360|20480 15360!23893 0|23893 15360"/>
-                    <Edge strokeStyle="1" edges="!20480 0|20480 15360!0 15360|0 0"/>
-                    <Edge strokeStyle="2" edges="!0 0|20480 0!20480 15360|0 15360!-3413 15360|-3413 0!-3413 0|0 0!0 15360|-3413 15360"/>
+                    <Edge strokeStyle="2" edges="!20480 0|23893 0!23893 15360|20480 15360"/>
+                    <Edge strokeStyle="1" edges="!20480 0|20480 15360"/>
+                    <Edge strokeStyle="2" edges="!23893 0|23893 15360"/>
+                    <Edge strokeStyle="1" edges="!186 5191|186 0"/>
+                    <Edge strokeStyle="2" edges="!186 0|6501.5 0"/>
+                    <Edge strokeStyle="1" edges="!0 15360|0 5191"/>
+                    <Edge strokeStyle="2" edges="!6501.5 0|20480 0!20480 15360|0 15360!-3227 5191|-3227 0!-3413 15360|-3413 5191!-3227 0|186 0!0 15360|-3413 15360"/>
                   </edges>
                 </DOMShape>
               </elements>
@@ -269,9 +293,13 @@
                     </StrokeStyle>
                   </strokes>
                   <edges>
-                    <Edge strokeStyle="2" edges="!20480 0|23893 0!23893 15360|20480 15360!23893 0|23893 15360"/>
-                    <Edge strokeStyle="1" edges="!20480 0|20480 15360!0 15360|0 0"/>
-                    <Edge strokeStyle="2" edges="!0 0|20480 0!20480 15360|0 15360!-3413 15360|-3413 0!-3413 0|0 0!0 15360|-3413 15360"/>
+                    <Edge strokeStyle="2" edges="!20480 0|23893 0!23893 15360|20480 15360"/>
+                    <Edge strokeStyle="1" edges="!20480 0|20480 15360"/>
+                    <Edge strokeStyle="2" edges="!23893 0|23893 15360"/>
+                    <Edge strokeStyle="1" edges="!186 5191|186 0"/>
+                    <Edge strokeStyle="2" edges="!186 0|6501.5 0"/>
+                    <Edge strokeStyle="1" edges="!0 15360|0 5191"/>
+                    <Edge strokeStyle="2" edges="!6501.5 0|20480 0!20480 15360|0 15360!-3227 5191|-3227 0!-3413 15360|-3413 5191!-3227 0|186 0!0 15360|-3413 15360"/>
                   </edges>
                 </DOMShape>
               </elements>
@@ -284,7 +312,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Character/_Graphics/Characthair">
                   <matrix>
-                    <Matrix tx="465.7" ty="428.3"/>
+                    <Matrix tx="-16.05" ty="-134.55"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -296,7 +324,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Character/_Graphics/Characthair">
                   <matrix>
-                    <Matrix tx="465.7" ty="428.3"/>
+                    <Matrix tx="-16.05" ty="-134.55"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -308,7 +336,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Character/_Graphics/Characthair">
                   <matrix>
-                    <Matrix tx="465.7" ty="420.5"/>
+                    <Matrix tx="-16.05" ty="-142.35"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -320,7 +348,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Character/_Graphics/Characthair">
                   <matrix>
-                    <Matrix tx="465.7" ty="428.3"/>
+                    <Matrix tx="-16.05" ty="-134.55"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -332,7 +360,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Character/_Graphics/Characthair">
                   <matrix>
-                    <Matrix tx="465.7" ty="428.3"/>
+                    <Matrix tx="-16.05" ty="-134.55"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -344,7 +372,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Character/_Graphics/Characthair">
                   <matrix>
-                    <Matrix tx="465.7" ty="428.3"/>
+                    <Matrix tx="-16.05" ty="-134.55"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -356,7 +384,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Character/_Graphics/Characthair">
                   <matrix>
-                    <Matrix tx="465.7" ty="428.3"/>
+                    <Matrix tx="-16.05" ty="-134.55"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -368,7 +396,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Character/_Graphics/Characthair">
                   <matrix>
-                    <Matrix tx="465.7" ty="428.3"/>
+                    <Matrix tx="-16.05" ty="-134.55"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -380,7 +408,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Character/_Graphics/Characthair">
                   <matrix>
-                    <Matrix tx="465.7" ty="428.3"/>
+                    <Matrix tx="-16.05" ty="-134.55"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -396,7 +424,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_LeftArm">
                   <matrix>
-                    <Matrix tx="375.45" ty="577.05"/>
+                    <Matrix tx="-106.3" ty="14.2"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -408,7 +436,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_LeftArm">
                   <matrix>
-                    <Matrix tx="375.45" ty="577.05"/>
+                    <Matrix tx="-106.3" ty="14.2"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -420,7 +448,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_LeftArm">
                   <matrix>
-                    <Matrix tx="375.45" ty="569.25"/>
+                    <Matrix tx="-106.3" ty="6.4"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -432,7 +460,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_LeftArm">
                   <matrix>
-                    <Matrix tx="375.45" ty="577.05"/>
+                    <Matrix tx="-106.3" ty="14.2"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -444,7 +472,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_LeftArm">
                   <matrix>
-                    <Matrix tx="375.45" ty="577.05"/>
+                    <Matrix tx="-106.3" ty="14.2"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -456,7 +484,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_LeftArm">
                   <matrix>
-                    <Matrix a="0.86602783203125" b="-0.499984741210938" c="0.499984741210938" d="0.86602783203125" tx="389.1" ty="577.05"/>
+                    <Matrix a="0.86602783203125" b="-0.499984741210938" c="0.499984741210938" d="0.86602783203125" tx="-92.65" ty="14.2"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -468,7 +496,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_LeftArm">
                   <matrix>
-                    <Matrix tx="375.45" ty="577.05"/>
+                    <Matrix tx="-106.3" ty="14.2"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -480,7 +508,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_LeftArm">
                   <matrix>
-                    <Matrix a="0.91387939453125" b="0.405975341796875" c="-0.405975341796875" d="0.91387939453125" tx="362.95" ty="577.05"/>
+                    <Matrix a="0.91387939453125" b="0.405975341796875" c="-0.405975341796875" d="0.91387939453125" tx="-118.8" ty="14.2"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -492,7 +520,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_LeftArm">
                   <matrix>
-                    <Matrix tx="375.45" ty="577.05"/>
+                    <Matrix tx="-106.3" ty="14.2"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -502,13 +530,13 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="details" color="#009999" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="details" color="#009999" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
                 <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_eyesDetails">
                   <matrix>
-                    <Matrix tx="518.35" ty="518.05"/>
+                    <Matrix tx="36.6" ty="-44.8"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -520,7 +548,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_eyesDetails">
                   <matrix>
-                    <Matrix tx="518.35" ty="518.05"/>
+                    <Matrix tx="36.6" ty="-44.8"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -532,7 +560,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_eyesDetails">
                   <matrix>
-                    <Matrix tx="518.35" ty="510.25"/>
+                    <Matrix tx="36.6" ty="-52.6"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -544,7 +572,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_eyesDetails">
                   <matrix>
-                    <Matrix tx="518.35" ty="518.05"/>
+                    <Matrix tx="36.6" ty="-44.8"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -556,7 +584,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_eyesDetails">
                   <matrix>
-                    <Matrix tx="518.35" ty="518.05"/>
+                    <Matrix tx="36.6" ty="-44.8"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -568,7 +596,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_eyesDetails">
                   <matrix>
-                    <Matrix tx="518.35" ty="518.05"/>
+                    <Matrix tx="36.6" ty="-44.8"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -580,7 +608,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_eyesDetails">
                   <matrix>
-                    <Matrix tx="518.35" ty="518.05"/>
+                    <Matrix tx="36.6" ty="-44.8"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -592,7 +620,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_eyesDetails">
                   <matrix>
-                    <Matrix tx="518.35" ty="518.05"/>
+                    <Matrix tx="36.6" ty="-44.8"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -604,7 +632,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_eyesDetails">
                   <matrix>
-                    <Matrix tx="518.35" ty="518.05"/>
+                    <Matrix tx="36.6" ty="-44.8"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -620,7 +648,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_eyesBlack">
                   <matrix>
-                    <Matrix tx="504.75" ty="526.85"/>
+                    <Matrix tx="23" ty="-36"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -632,7 +660,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_eyesBlack">
                   <matrix>
-                    <Matrix tx="504.75" ty="526.85"/>
+                    <Matrix tx="23" ty="-36"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -644,7 +672,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_eyesBlack">
                   <matrix>
-                    <Matrix tx="504.75" ty="519.05"/>
+                    <Matrix tx="23" ty="-43.8"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -656,7 +684,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_eyesBlack">
                   <matrix>
-                    <Matrix tx="504.75" ty="526.85"/>
+                    <Matrix tx="23" ty="-36"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -668,7 +696,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_eyesBlack">
                   <matrix>
-                    <Matrix tx="504.75" ty="526.85"/>
+                    <Matrix tx="23" ty="-36"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -680,7 +708,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_eyesBlack">
                   <matrix>
-                    <Matrix tx="504.75" ty="526.85"/>
+                    <Matrix tx="23" ty="-36"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -692,7 +720,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_eyesBlack">
                   <matrix>
-                    <Matrix tx="504.75" ty="526.85"/>
+                    <Matrix tx="23" ty="-36"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -704,7 +732,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_eyesBlack">
                   <matrix>
-                    <Matrix tx="504.75" ty="526.85"/>
+                    <Matrix tx="23" ty="-36"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -716,7 +744,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_eyesBlack">
                   <matrix>
-                    <Matrix tx="504.75" ty="526.85"/>
+                    <Matrix tx="23" ty="-36"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -732,7 +760,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_eyesWhite">
                   <matrix>
-                    <Matrix tx="499.55" ty="520.9"/>
+                    <Matrix tx="17.8" ty="-41.95"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -744,7 +772,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_eyesWhite">
                   <matrix>
-                    <Matrix tx="499.55" ty="520.9"/>
+                    <Matrix tx="17.8" ty="-41.95"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -756,7 +784,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_eyesWhite">
                   <matrix>
-                    <Matrix tx="499.55" ty="513.1"/>
+                    <Matrix tx="17.8" ty="-49.75"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -768,7 +796,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_eyesWhite">
                   <matrix>
-                    <Matrix tx="499.55" ty="520.9"/>
+                    <Matrix tx="17.8" ty="-41.95"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -780,7 +808,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_eyesWhite">
                   <matrix>
-                    <Matrix tx="499.55" ty="520.9"/>
+                    <Matrix tx="17.8" ty="-41.95"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -792,7 +820,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_eyesWhite">
                   <matrix>
-                    <Matrix tx="499.55" ty="520.9"/>
+                    <Matrix tx="17.8" ty="-41.95"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -804,7 +832,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_eyesWhite">
                   <matrix>
-                    <Matrix tx="499.55" ty="520.9"/>
+                    <Matrix tx="17.8" ty="-41.95"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -816,7 +844,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_eyesWhite">
                   <matrix>
-                    <Matrix tx="499.55" ty="520.9"/>
+                    <Matrix tx="17.8" ty="-41.95"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -828,7 +856,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_eyesWhite">
                   <matrix>
-                    <Matrix tx="499.55" ty="520.9"/>
+                    <Matrix tx="17.8" ty="-41.95"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -844,7 +872,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_leftLeg">
                   <matrix>
-                    <Matrix tx="432.4" ty="657.75"/>
+                    <Matrix tx="-49.35" ty="94.9"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -856,7 +884,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_leftLeg">
                   <matrix>
-                    <Matrix tx="432.4" ty="657.75"/>
+                    <Matrix tx="-49.35" ty="94.9"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -868,7 +896,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_leftLeg">
                   <matrix>
-                    <Matrix tx="432.4" ty="657.75"/>
+                    <Matrix tx="-49.35" ty="94.9"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -880,7 +908,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_leftLeg">
                   <matrix>
-                    <Matrix tx="432.4" ty="657.75"/>
+                    <Matrix tx="-49.35" ty="94.9"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -890,9 +918,9 @@
             </DOMFrame>
             <DOMFrame index="49" duration="6" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_leftLeg" centerPoint3DX="432.4" centerPoint3DY="657.75">
+                <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_leftLeg" centerPoint3DX="-49.35" centerPoint3DY="94.9">
                   <matrix>
-                    <Matrix tx="432.4" ty="657.75"/>
+                    <Matrix tx="-49.35" ty="94.9"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -904,7 +932,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_leftLeg">
                   <matrix>
-                    <Matrix tx="432.4" ty="657.75"/>
+                    <Matrix tx="-49.35" ty="94.9"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -916,7 +944,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_leftLeg">
                   <matrix>
-                    <Matrix a="0.965927124023438" b="0.258804321289063" c="-0.258804321289063" d="0.965927124023438" tx="424" ty="658.35"/>
+                    <Matrix a="0.965927124023438" b="0.258804321289063" c="-0.258804321289063" d="0.965927124023438" tx="-57.75" ty="95.5"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -928,7 +956,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_leftLeg">
                   <matrix>
-                    <Matrix tx="432.4" ty="657.75"/>
+                    <Matrix tx="-49.35" ty="94.9"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -940,7 +968,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_leftLeg">
                   <matrix>
-                    <Matrix a="0.86602783203125" b="-0.499984741210938" c="0.499984741210938" d="0.86602783203125" tx="450.7" ty="660.35"/>
+                    <Matrix a="0.86602783203125" b="-0.499984741210938" c="0.499984741210938" d="0.86602783203125" tx="-31.05" ty="97.5"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -950,9 +978,9 @@
             </DOMFrame>
             <DOMFrame index="92" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_leftLeg" centerPoint3DX="432.4" centerPoint3DY="657.75">
+                <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_leftLeg" centerPoint3DX="-49.35" centerPoint3DY="94.9">
                   <matrix>
-                    <Matrix tx="432.4" ty="657.75"/>
+                    <Matrix tx="-49.35" ty="94.9"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -968,7 +996,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_rghtLeg">
                   <matrix>
-                    <Matrix tx="535.9" ty="651.8"/>
+                    <Matrix tx="54.15" ty="88.95"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -980,7 +1008,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_rghtLeg">
                   <matrix>
-                    <Matrix tx="535.9" ty="651.8"/>
+                    <Matrix tx="54.15" ty="88.95"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -992,7 +1020,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_rghtLeg">
                   <matrix>
-                    <Matrix tx="535.9" ty="651.8"/>
+                    <Matrix tx="54.15" ty="88.95"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -1004,7 +1032,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_rghtLeg">
                   <matrix>
-                    <Matrix tx="535.9" ty="651.8"/>
+                    <Matrix tx="54.15" ty="88.95"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -1016,7 +1044,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_rghtLeg">
                   <matrix>
-                    <Matrix tx="535.9" ty="651.8"/>
+                    <Matrix tx="54.15" ty="88.95"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -1028,7 +1056,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_rghtLeg">
                   <matrix>
-                    <Matrix a="0.86602783203125" b="-0.499984741210938" c="0.499984741210938" d="0.86602783203125" tx="553.7" ty="650.7"/>
+                    <Matrix a="0.86602783203125" b="-0.499984741210938" c="0.499984741210938" d="0.86602783203125" tx="71.95" ty="87.85"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -1040,7 +1068,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_rghtLeg">
                   <matrix>
-                    <Matrix tx="535.9" ty="651.8"/>
+                    <Matrix tx="54.15" ty="88.95"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -1052,7 +1080,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_rghtLeg">
                   <matrix>
-                    <Matrix a="0.86602783203125" b="0.499984741210938" c="-0.499984741210938" d="0.86602783203125" tx="520.9" ty="657.8"/>
+                    <Matrix a="0.86602783203125" b="0.499984741210938" c="-0.499984741210938" d="0.86602783203125" tx="39.15" ty="94.95"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -1064,7 +1092,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_rghtLeg">
                   <matrix>
-                    <Matrix tx="535.9" ty="651.8"/>
+                    <Matrix tx="54.15" ty="88.95"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -1080,7 +1108,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_Body">
                   <matrix>
-                    <Matrix tx="473.6" ty="541.15"/>
+                    <Matrix tx="-8.15" ty="-21.7"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -1092,7 +1120,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_Body">
                   <matrix>
-                    <Matrix tx="473.6" ty="541.15"/>
+                    <Matrix tx="-8.15" ty="-21.7"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -1102,9 +1130,9 @@
             </DOMFrame>
             <DOMFrame index="24" duration="24" tweenType="motion" motionTweenSnap="true" keyMode="22017">
               <elements>
-                <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_Body" centerPoint3DX="473.6" centerPoint3DY="535.75">
+                <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_Body" centerPoint3DX="-8.15" centerPoint3DY="-27.1">
                   <matrix>
-                    <Matrix a="1.02000427246094" d="1.01998901367188" tx="473.6" ty="535.75"/>
+                    <Matrix a="1.02000427246094" d="1.01998901367188" tx="-8.15" ty="-27.1"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -1116,7 +1144,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_Body">
                   <matrix>
-                    <Matrix tx="473.6" ty="541.15"/>
+                    <Matrix tx="-8.15" ty="-21.7"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -1128,7 +1156,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_Body">
                   <matrix>
-                    <Matrix tx="473.6" ty="541.15"/>
+                    <Matrix tx="-8.15" ty="-21.7"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -1140,7 +1168,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_Body">
                   <matrix>
-                    <Matrix tx="473.6" ty="541.15"/>
+                    <Matrix tx="-8.15" ty="-21.7"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -1152,7 +1180,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_Body">
                   <matrix>
-                    <Matrix tx="473.6" ty="541.15"/>
+                    <Matrix tx="-8.15" ty="-21.7"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -1164,7 +1192,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_Body">
                   <matrix>
-                    <Matrix tx="473.6" ty="541.15"/>
+                    <Matrix tx="-8.15" ty="-21.7"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -1176,7 +1204,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_Body">
                   <matrix>
-                    <Matrix tx="473.6" ty="541.15"/>
+                    <Matrix tx="-8.15" ty="-21.7"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -1192,7 +1220,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_RightArm">
                   <matrix>
-                    <Matrix tx="573.6" ty="565.3"/>
+                    <Matrix tx="91.85" ty="2.45"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -1204,7 +1232,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_RightArm">
                   <matrix>
-                    <Matrix tx="573.6" ty="565.3"/>
+                    <Matrix tx="91.85" ty="2.45"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -1216,7 +1244,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_RightArm">
                   <matrix>
-                    <Matrix tx="573.6" ty="557.5"/>
+                    <Matrix tx="91.85" ty="-5.35"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -1228,7 +1256,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_RightArm">
                   <matrix>
-                    <Matrix tx="573.6" ty="565.3"/>
+                    <Matrix tx="91.85" ty="2.45"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -1238,9 +1266,9 @@
             </DOMFrame>
             <DOMFrame index="49" duration="6" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_RightArm" centerPoint3DX="573.6" centerPoint3DY="565.3">
+                <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_RightArm" centerPoint3DX="91.85" centerPoint3DY="2.45">
                   <matrix>
-                    <Matrix tx="573.6" ty="565.3"/>
+                    <Matrix tx="91.85" ty="2.45"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -1250,9 +1278,9 @@
             </DOMFrame>
             <DOMFrame index="55" duration="9" tweenType="motion" motionTweenSnap="true" keyMode="22017">
               <elements>
-                <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_RightArm" selected="true">
+                <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_RightArm">
                   <matrix>
-                    <Matrix tx="573.6" ty="565.3"/>
+                    <Matrix tx="91.85" ty="2.45"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -1264,7 +1292,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_RightArm">
                   <matrix>
-                    <Matrix a="0.987060546875" b="-0.16033935546875" c="0.16033935546875" d="0.987060546875" tx="576.6" ty="565.5"/>
+                    <Matrix a="0.987060546875" b="-0.16033935546875" c="0.16033935546875" d="0.987060546875" tx="94.85" ty="2.65"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -1276,7 +1304,7 @@
               <elements>
                 <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_RightArm">
                   <matrix>
-                    <Matrix a="0.965911865234375" b="0.258819580078125" c="-0.258819580078125" d="0.965911865234375" tx="565.9" ty="577.4"/>
+                    <Matrix a="0.965911865234375" b="0.258819580078125" c="-0.258819580078125" d="0.965911865234375" tx="84.15" ty="14.55"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -1286,9 +1314,9 @@
             </DOMFrame>
             <DOMFrame index="84" duration="8" tweenType="motion" motionTweenSnap="true" keyMode="22017">
               <elements>
-                <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_RightArm" selected="true">
+                <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_RightArm">
                   <matrix>
-                    <Matrix a="0.965927124023438" b="-0.258804321289063" c="0.258804321289063" d="0.965927124023438" tx="572.15" ty="567.2"/>
+                    <Matrix a="0.965927124023438" b="-0.258804321289063" c="0.258804321289063" d="0.965927124023438" tx="90.4" ty="4.35"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
@@ -1298,9 +1326,9 @@
             </DOMFrame>
             <DOMFrame index="92" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_RightArm" centerPoint3DX="573.6" centerPoint3DY="565.3">
+                <DOMSymbolInstance libraryItemName="_Character/_Graphics/Character_RightArm" centerPoint3DX="91.85" centerPoint3DY="2.45">
                   <matrix>
-                    <Matrix tx="573.6" ty="565.3"/>
+                    <Matrix tx="91.85" ty="2.45"/>
                   </matrix>
                   <transformationPoint>
                     <Point/>
